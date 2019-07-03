@@ -1747,7 +1747,7 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/app/Blogers Git/your_project" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -1889,7 +1889,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="490" />
     <option name="y" value="405" />
     <option name="width" value="1370" />
@@ -2599,7 +2599,7 @@
       <workItem from="1562059458171" duration="599000" />
       <workItem from="1562064143372" duration="81000" />
       <workItem from="1562064233523" duration="25338000" />
-      <workItem from="1562149192434" duration="26646000" />
+      <workItem from="1562149192434" duration="27077000" />
     </task>
     <task id="LOCAL-00001" summary="Правка">
       <created>1561646159268</created>
@@ -2668,7 +2668,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5293105000" />
+    <option name="totallyTimeSpent" value="5293536000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2680,7 +2680,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4942717" visible="true" weight="0.18322147" />
