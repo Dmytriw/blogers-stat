@@ -364,11 +364,13 @@
   padding-bottom: 4px;
   border-right: 1px solid #D5DFE4;
   white-space: nowrap;
+  z-index: 5;
 
   &:first-child {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    z-index: 3;
   }
 
   &:last-child {
@@ -386,6 +388,17 @@
 
   &:nth-child(even) {
     background-color: #F8F8F8;
+
+    .stat__table__call {
+      background-color: #F8F8F8;
+    }
+  }
+  &:nth-child(odd) {
+    background-color: #F8F8F8;
+
+    .stat__table__call {
+      background-color: #fff;
+    }
   }
 }
 
@@ -710,13 +723,14 @@
   position: absolute;
   top: 0;
   left: 0;
-  bottom: 0;
+  width: 100%;
   background: #192229;
   border-radius: 5px;
   color: #fff;
   min-height: 26px;
   word-wrap: break-word;
-  white-space: inherit;
+  white-space: pre-line;
+  height: auto;
   padding-left: 20px;
   padding-right: 10px;
   padding-top: 5px;

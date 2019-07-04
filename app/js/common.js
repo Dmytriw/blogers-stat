@@ -190,6 +190,7 @@ $(function () {
 
         if(thisW > thisCallW) {
             thisCall.prepend('<div class="tolltip">'+thisText+'</div>');
+            thisCall.css({'z-index' : '4'});
         }
     });
 

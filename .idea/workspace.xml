@@ -4,13 +4,9 @@
     <list default="true" id="3e13581c-f3ad-4fff-9204-4d85cc227bbb" name="Default" comment="Правка 5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/pages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/pages/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/scss/sections/filter_stat.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/sections/filter_stat.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/scss/sections/stat__section.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/sections/stat__section.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/main.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/maps/main.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/maps/main.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/custom.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/custom.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/maps/custom.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/maps/custom.min.js.map" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -755,9 +751,9 @@
     <session id="151744776">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
-          <entry key="project.open.time.0" value="7" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.closed" value="7" />
+          <entry key="project.open.time.0" value="8" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -765,7 +761,7 @@
           <entry key="css" value="3" />
           <entry key="html" value="10" />
           <entry key="js" value="21" />
-          <entry key="scss" value="21" />
+          <entry key="scss" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -773,21 +769,21 @@
           <entry key="CSS" value="3" />
           <entry key="HTML" value="10" />
           <entry key="JavaScript" value="21" />
-          <entry key="SCSS" value="21" />
+          <entry key="SCSS" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="1796" />
-          <entry key="js" value="1190" />
-          <entry key="scss" value="4385" />
+          <entry key="html" value="1798" />
+          <entry key="js" value="1211" />
+          <entry key="scss" value="4432" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="1796" />
-          <entry key="JavaScript" value="1190" />
-          <entry key="SCSS" value="4385" />
+          <entry key="HTML" value="1798" />
+          <entry key="JavaScript" value="1211" />
+          <entry key="SCSS" value="4432" />
         </counts>
       </usages-collector>
     </session>
@@ -1539,12 +1535,12 @@
     </favorites_list>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/js/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="878">
-              <caret line="76" column="50" lean-forward="true" selection-start-line="76" selection-start-column="50" selection-end-line="76" selection-end-column="50" />
+            <state relative-caret-position="405">
+              <caret line="192" column="44" selection-start-line="192" selection-start-column="44" selection-end-line="192" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -1552,17 +1548,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scss/sections/filter_stat.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
+            <state relative-caret-position="6579">
               <caret line="387" column="18" selection-start-line="387" selection-start-column="18" selection-end-line="387" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/pages/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="981" column="36" selection-start-line="981" selection-start-column="36" selection-end-line="981" selection-end-column="36" />
+            <state relative-caret-position="425">
+              <caret line="2030" column="83" lean-forward="true" selection-start-line="2030" selection-start-column="83" selection-end-line="2030" selection-end-column="83" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scss/sections/stat__section.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="463">
+              <caret line="721" column="8" selection-start-line="721" selection-start-column="1" selection-end-line="721" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -1595,9 +1600,7 @@
       <find>middle__table</find>
       <find>stat__table__rows</find>
       <find>.stat__infographick__content</find>
-      <find>call</find>
       <find>stat__table__call</find>
-      <find>tolltip</find>
       <find>calendar</find>
       <find>getElementById</find>
       <find>hook</find>
@@ -1608,6 +1611,8 @@
       <find>txtTest</find>
       <find>input__select__text</find>
       <find>Топ по</find>
+      <find>call</find>
+      <find>tolltip</find>
     </findStrings>
     <replaceStrings>
       <replace>\n</replace>
@@ -1673,7 +1678,6 @@
         <option value="$USER_HOME$/AppData/Local/Temp/scp01542/www.gaboarchitects.com/wp-content/themes/gabo-architects/single.php" />
         <option value="$PROJECT_DIR$/app/libs/scroll-lock.js" />
         <option value="$PROJECT_DIR$/app/scss/main.scss" />
-        <option value="$PROJECT_DIR$/app/scss/sections/stat__section.scss" />
         <option value="$PROJECT_DIR$/app/libs/pureJSCalendar/pureJSCalendar.js" />
         <option value="$PROJECT_DIR$/app/libs/pureJSCalendar/calendar.css" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
@@ -1681,9 +1685,10 @@
         <option value="$PROJECT_DIR$/dist/js/pureJSCalendar2.js" />
         <option value="$PROJECT_DIR$/app/scss/sections/header.scss" />
         <option value="$PROJECT_DIR$/app/scss/layout/settings.scss" />
-        <option value="$PROJECT_DIR$/app/js/common.js" />
         <option value="$PROJECT_DIR$/app/scss/sections/filter_stat.scss" />
         <option value="$PROJECT_DIR$/app/pages/index.html" />
+        <option value="$PROJECT_DIR$/app/scss/sections/stat__section.scss" />
+        <option value="$PROJECT_DIR$/app/js/common.js" />
       </list>
     </option>
   </component>
@@ -2471,7 +2476,8 @@
       <workItem from="1562230380888" duration="445000" />
       <workItem from="1562231365755" duration="126000" />
       <workItem from="1562232320901" duration="624000" />
-      <workItem from="1562240924928" duration="2111000" />
+      <workItem from="1562240924928" duration="2324000" />
+      <workItem from="1562244997091" duration="894000" />
     </task>
     <task id="LOCAL-00001" summary="Правка">
       <created>1561646159268</created>
@@ -2564,11 +2570,18 @@
       <option name="project" value="LOCAL" />
       <updated>1562232342153</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Правка 5">
+      <created>1562243274688</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1562243274688</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5297500000" />
+    <option name="totallyTimeSpent" value="5298607000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2583,7 +2596,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4942717" visible="true" weight="0.19395973" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4942717" visible="true" weight="0.19664429" />
       <window_info id="Structure" order="1" weight="0.24966443" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -2682,13 +2695,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scss/sections/stat__section.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="716" column="19" selection-start-line="716" selection-start-column="19" selection-end-line="716" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../blogger-card-form-master/js/index.js" />
     <entry file="file://$PROJECT_DIR$/../blogger-card-form-master/js/jquery-3.4.1.js" />
     <entry file="file://$PROJECT_DIR$/app/scss/layout/normalize.scss">
@@ -2738,24 +2744,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="878">
-          <caret line="76" column="50" lean-forward="true" selection-start-line="76" selection-start-column="50" selection-end-line="76" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scss/sections/filter_stat.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
+        <state relative-caret-position="6579">
           <caret line="387" column="18" selection-start-line="387" selection-start-column="18" selection-end-line="387" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/pages/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="981" column="36" selection-start-line="981" selection-start-column="36" selection-end-line="981" selection-end-column="36" />
+        <state relative-caret-position="425">
+          <caret line="2030" column="83" lean-forward="true" selection-start-line="2030" selection-start-column="83" selection-end-line="2030" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scss/sections/stat__section.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="721" column="8" selection-start-line="721" selection-start-column="1" selection-end-line="721" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="192" column="44" selection-start-line="192" selection-start-column="44" selection-end-line="192" selection-end-column="44" />
         </state>
       </provider>
     </entry>
