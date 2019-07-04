@@ -76,8 +76,15 @@ $(function () {
         $(this).attr('id', 'txtTest');
         $(this).siblings().attr('disabled', true);
     });
-    $('.input_cal').focusout(function () {
-        $(this).siblings().attr('disabled', false);
+    $('body').hover(function () {
+        var
+            cal = $('#cal').length;
+
+        if(cal < 1) {
+            $('.input_cal').attr('disabled', false);
+        }
+
+        console.log(cal)
     });
 
 
