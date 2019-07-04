@@ -329,7 +329,7 @@
       }
       &:nth-child(2) {
         .form__part__inputs {
-          width: calc(100% - 47px);
+          width: calc(100% - 45px);
         }
       }
     }
@@ -421,7 +421,12 @@
   }
 }
 
-
+.input_cal {
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 12px;
+}
 
 
 
