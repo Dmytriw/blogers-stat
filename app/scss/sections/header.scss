@@ -182,19 +182,23 @@
     }
   }
   .nav__overlay {
-    display: block;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 285px;
     width: 100vw;
     background-color: rgba(0, 0, 0, .5);
+    display: none;
   }
 
   .openedNav {
     z-index: 30;
     left: 0;
     opacity: 1;
+
+    .nav__overlay {
+      display: block;
+    }
   }
 }
 
