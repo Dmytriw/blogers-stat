@@ -47,6 +47,8 @@ $(function () {
 
         if(!thisContainer.hasClass('openedSelect')){
             thisContainer.addClass('openedSelect');
+        } else {
+            thisContainer.removeClass('openedSelect');
         }
 
     });
@@ -100,11 +102,11 @@ $(function () {
         if(!$this.hasClass('openedBlock')) {
             thisBlock.addClass('hideElements');
             $this.addClass('openedBlock');
-            $this.find('.hide__groupText').text('Скрыть раздел');
+            $this.find('.hide__groupText').text('Развернуть раздел');
         } else {
             thisBlock.removeClass('hideElements');
             $this.removeClass('openedBlock');
-            $this.find('.hide__groupText').text('Развернуть раздел');
+            $this.find('.hide__groupText').text('Скрыть раздел');
         }
     });
 
@@ -175,6 +177,12 @@ $(function () {
         }
     });
 
+    $('.grope__bidden__bottom').click(function (e) {
+        e.preventDefault();
+
+        $(this).closest('.stat__grope').find('.hide__group__button').click();
+    });
+
 
 
 
@@ -192,6 +200,46 @@ $(function () {
             thisCall.prepend('<div class="tolltip">'+thisText+'</div>');
             thisCall.css({'z-index' : '4'});
         }
+    });
+
+
+
+    ////////////////////////////////
+    $(window).scroll(function () {
+        var
+            scrollTop = $(window).scrollTop();
+
+        $('.stat__grope').each(function() {
+            var
+                $this = $(this),
+                thisOffset = $this.offset().top,
+                thisHeight = $this.height(),
+                thisId = $this.attr('id'),
+                thisHref = '#'+thisId,
+                thisLink = $("[href='" + thisHref + "']"),
+                thisItem = thisLink.closest('li');
+
+            if(scrollTop + 118 >= thisOffset && scrollTop < thisOffset + thisHeight) {
+                thisLink.addClass('active');
+                thisItem.siblings().find('a').removeClass('active');
+            }
+        });
+    });
+
+    // Якорні посилання
+    $('.stat__nav__item a[href^="#"]').bind('click.smoothscroll',function (e) {
+        e.preventDefault();
+
+        var target = this.hash,
+            $target = $(target);
+
+        $('html, body').stop().animate({'scrollTop': $target.offset().top - 117  }, 1000, 'swing', function () {});
+        $('.hamburger__nav').removeClass('opened');
+        $('.header__menu').fadeOut(500);
+        $('html, body').css({'overflow' : 'visible'});
+        setTimeout(function(){
+            $('.header__form').css({'z-index' : '-10', 'opacity' : '0'});
+        }, 1000);
     });
 
 });

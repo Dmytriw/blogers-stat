@@ -1,3 +1,70 @@
+.filter__block {
+  position: relative;
+}
+
+.stat__nav {
+  background-color: #fff;
+  position: relative;
+  z-index: 9;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-shadow: 0px 3px 10px rgba(0, 73, 129, 0.1);
+  border-top: 1px solid #D5DFE4;
+  margin-top: 13px;
+  display: none;
+}
+
+.stat__nav__item {
+  margin-right: 15px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+  a {
+    line-height: 37px;
+    display: inline-block;
+    font-size: 14px;
+    color: #192229;
+    position: relative;
+
+    &.active {
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background-color: #192229;
+      }
+    }
+  }
+}
+
+.stat__grope__button {
+  justify-content: center;
+  width: 100%;
+}
+
+.stat__grope {
+  margin-bottom: 30px;
+}
+
+.grope__bidden__bottom {
+  background: #FFFFFF;
+  border: 1px solid #D5DFE4;
+  box-sizing: border-box;
+  border-radius: 5px;
+  line-height: 32px;
+  height: 32px;
+  text-align: center;
+  font-size: 14px;
+  color: #6A7B83;
+  width: 130px;
+  margin-top: -10px;
+  display: none;
+}
+
 .stat__section {
   margin-top: 20px;
   padding-bottom: 70px;
@@ -279,6 +346,21 @@
       }
     }
   }
+  .last__order {
+    order: 1;
+  }
+  .grope__bidden__bottom {
+    display: block;
+  }
+  .stat__nav {
+    display: flex;
+  }
+  .header {
+    padding-bottom: 0;
+  }
+  .wrapper {
+    margin-top: 113px;
+  }
 }
 
 @media screen and (max-width: 379px) {
@@ -359,12 +441,16 @@
   padding-right: 5px;
   font-size: 14px;
   line-height: 17px;
-  color: #192229;
+  color: #192229 !important;
   padding-top: 6px;
   padding-bottom: 4px;
   border-right: 1px solid #D5DFE4;
   white-space: nowrap;
   z-index: 5;
+
+  a {
+    color: #192229 !important;
+  }
 
   &:first-child {
     white-space: nowrap;
@@ -394,7 +480,7 @@
     }
   }
   &:nth-child(odd) {
-    background-color: #F8F8F8;
+    background-color: #fff;
 
     .stat__table__call {
       background-color: #fff;
@@ -870,6 +956,13 @@
     }
     .stat__table__call:nth-child(1) {
       width: 155px;
+    }
+  }
+  .stat__table_7 .stat__table__call:nth-child(9) {
+    width: 110px;
+    padding-right: 5px;
+    br {
+      display: none;
     }
   }
 }
