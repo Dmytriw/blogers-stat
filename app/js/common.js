@@ -74,19 +74,25 @@ $(function () {
 
     ////////////////////////////////////////////////
     $('.input_cal').focus(function () {
+        var
+            thisInput = $(this);
+
         $(this).siblings().removeAttr('id');
         $(this).attr('id', 'txtTest');
-        $(this).siblings().attr('disabled', true);
+        setTimeout(function () {
+            $('.closeCalendar').show();
+        }, 500);
+
+        setTimeout(function () {
+            $('.eformDay').click(function () {
+                $('.closeCalendar').hide();
+                thisInput.css({'color' : '#192229'});
+            });
+        }, 100);
     });
-    $('body').hover(function () {
-        var
-            cal = $('#cal').length;
 
-        if(cal < 1) {
-            $('.input_cal').attr('disabled', false);
-        }
-
-        console.log(cal)
+    $('.closeCalendar').click(function (e) {
+        $(this).hide();
     });
 
 

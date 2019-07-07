@@ -121,8 +121,9 @@
               или
             </div>
             <div class="form__part__inputs" id="calendar">
-              <input onclick="pureJSCalendar.open('dd.MM.yyyy', 0, 0, 1, '2018-5-5', '2019-8-20', 'txtTest', 20)"  type="text" class="input input__short input_cal" placeholder="Начало периода">
-              <input onclick="pureJSCalendar.open('dd.MM.yyyy', 0, 0, 1, '2018-5-5', '2019-8-20', 'txtTest', 20)" type="text" class="input input__short input_cal" placeholder="Конец периода">
+              <input onclick="pureJSCalendar.open('dd.MM.yyyy', 0, 0, 1, '2018-5-5', '2019-8-20', 'txtTest', 20)"  type="button" class="input input__short input_cal" value="Начало периода">
+              <input onclick="pureJSCalendar.open('dd.MM.yyyy', 0, 0, 1, '2018-5-5', '2019-8-20', 'txtTest', 20)" type="button" class="input input__short input_cal" value="Конец периода">
+                <input type="button" class="closeCalendar" value="" onclick="pureJSCalendar.close()" />
             </div>
           </div>
           <div class="filter__buttons flex">
@@ -320,7 +321,7 @@
             </div>
           </div>
 
-          <div class="stat__tiles stat__general__5 flex">
+          <div class="stat__tiles stat__tiles_bigger  stat__general__5 flex">
             <div class="stat__tile__one">
               <div class="stat__tile__title">
                 Промокоды на гивы в

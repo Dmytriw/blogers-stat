@@ -55,7 +55,7 @@
   width: 100%;
   font-size: 14px;
   padding-left: 10px;
-  color: #192229 !important;
+  color: #192229;
 }
 
 .input__short {
@@ -343,6 +343,17 @@
   text-align: left;
 }
 
+.closeCalendar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  display: none;
+}
+
 .month-year {
   color: #000;
 }
@@ -426,6 +437,7 @@
   padding-left: 5px;
   padding-right: 5px;
   font-size: 12px;
+  color: #6a7b83;
 }
 
 

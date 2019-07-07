@@ -41,6 +41,8 @@
   }
 }
 
+
+
 .stat__grope__button {
   justify-content: center;
   width: 100%;
@@ -369,6 +371,14 @@
   }
 }
 
+@media screen and (max-width: 370px) {
+  .stat__tiles_bigger {
+    .stat__tile__title {
+      min-height: 55px;
+    }
+  }
+}
+
 @media screen and (max-width: 359px) {
   .stat__tiles {
     width: 100%;
@@ -391,6 +401,9 @@
   }
   .stat__tile__coll {
     font-size: 14px;
+  }
+  .stat__tile__title {
+    min-height: inherit !important;
   }
 }
 
