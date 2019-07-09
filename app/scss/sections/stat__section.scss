@@ -24,10 +24,11 @@
     line-height: 37px;
     display: inline-block;
     font-size: 14px;
-    color: #192229;
+    color: #6A7B83;
     position: relative;
 
     &.active {
+      color: #192229;
       &::after {
         content: '';
         position: absolute;
@@ -229,6 +230,8 @@
 
 
 
+
+
 @media screen and (max-width: 1180px) {
   .stat__tiles {
     padding-left: 0;
@@ -297,6 +300,7 @@
       }
       &:nth-child(4) {
         padding-top: 10px;
+        border-right: 1px solid #D5DFE4;
       }
       &:last-child {
         border-bottom: none;
@@ -405,6 +409,9 @@
   .stat__tile__title {
     min-height: inherit !important;
   }
+  .last__order {
+    order: 0;
+  }
 }
 
 
@@ -435,7 +442,7 @@
   background-color: #F8F8F8;
 
   .stat__table__call {
-    color: #6A7B83;
+    color: #6A7B83 !important;
     font-weight: 500;
     display: flex;
     align-items: center;
@@ -466,10 +473,7 @@
   }
 
   &:first-child {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    z-index: 3;
+
   }
 
   &:last-child {
@@ -484,6 +488,12 @@
 
 .stat__table__row {
   display: flex;
+  position: relative;
+  z-index: 1;
+
+  &:hover {
+    z-index: 5;
+  }
 
   &:nth-child(even) {
     background-color: #F8F8F8;
@@ -820,24 +830,30 @@
 
 .tolltip {
   position: absolute;
-  top: 0;
+  top: 100%;
   left: 0;
-  width: 100%;
+  width: auto;
   background: #192229;
   border-radius: 5px;
+  line-height: 30px;
   color: #fff;
-  min-height: 26px;
+  min-height: 30px;
   word-wrap: break-word;
   white-space: pre-line;
   height: auto;
   padding-left: 20px;
-  padding-right: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-right: 20px;
   display: none;
   z-index: 20;
 }
 
+.long_tata {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  display: inline-block;
+}
 
 @media screen and (max-width: 1180px) {
   .stat__table_1 {
@@ -886,7 +902,7 @@
     }
     .stat__table__call {
       &:nth-child(1) {
-        width: 250px;
+        width: 245px;
       }
     }
   }
@@ -924,6 +940,7 @@
   }
   .tolltip {
     padding-left: 15px;
+    padding-right: 15px;
   }
   .stat__table__content {
     overflow: hidden;

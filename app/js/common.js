@@ -46,7 +46,9 @@ $(function () {
             thisContainer = $(this).closest('.input__selsct');
 
         if(!thisContainer.hasClass('openedSelect')){
-            thisContainer.addClass('openedSelect');
+            setTimeout(function(){
+                thisContainer.addClass('openedSelect');
+            }, 50);
         } else {
             thisContainer.removeClass('openedSelect');
         }
@@ -64,7 +66,7 @@ $(function () {
         $this.addClass('active');
         $this.siblings().removeClass('active');
         thisText.text(thisVal);
-        thisText.addClass('blackText')
+        thisText.addClass('blackText');
         thisInput.val(thisVal);
         thisContainer.removeClass('openedSelect');
     });
@@ -72,27 +74,10 @@ $(function () {
 
 
 
-    ////////////////////////////////////////////////
-    $('.input_cal').focus(function () {
-        var
-            thisInput = $(this);
-
-        $(this).siblings().removeAttr('id');
-        $(this).attr('id', 'txtTest');
-        setTimeout(function () {
-            $('.closeCalendar').show();
-        }, 500);
-
-        setTimeout(function () {
-            $('.eformDay').click(function () {
-                $('.closeCalendar').hide();
-                thisInput.css({'color' : '#192229'});
-            });
-        }, 100);
-    });
 
     $('.closeCalendar').click(function (e) {
         $(this).hide();
+        $(this).removeClass('activeClose');
     });
 
 
@@ -202,9 +187,9 @@ $(function () {
             thisCallW = thisCall.width(),
             thisText = $this.text();
 
-        if(thisW > thisCallW) {
+        if(thisW > thisCallW - 20) {
             thisCall.prepend('<div class="tolltip">'+thisText+'</div>');
-            thisCall.css({'z-index' : '4'});
+            thisCall.css({'z-index' : '6'});
         }
     });
 
@@ -248,7 +233,51 @@ $(function () {
         }, 1000);
     });
 
+
+    $('*').click(function (e) {
+        if($(e.target).is('.button-c')){
+            e.preventDefault();
+            return;
+        } else {
+            if($('.closeCalendar').hasClass('activeClose')) {
+                $('.closeCalendar').click();
+            }
+        }
+    });
+
+    $('body').click(function (e) {
+        if($('.input__selsct').hasClass('openedSelect')) {
+            $('.input__selsct').removeClass('openedSelect');
+        }
+    });
+
 });
 
+////////////////////////////////////////////////
+function calendarFunc(elem) {
+    $(elem).siblings().removeClass('addData');
+    $(elem).addClass('addData');
+    setTimeout(function () {
+        $('.closeCalendar').show();
+        $('.closeCalendar').addClass('activeClose');
+    }, 500);
 
+    setTimeout(function () {
+        $('.eformDay').click(function () {
+            $('.closeCalendar').hide();
+            setTimeout(function () {
+                var
+                    dataCal = $('#txtTest').val();
+
+                if($('.firstData').hasClass('addData')) {
+                    $('.firstData').val(dataCal);
+                    $('.firstData').css({'color' : '#192229'});
+                } else if($('.lastData').hasClass('addData')) {
+                    $('.lastData').val(dataCal);
+                    $('.lastData').css({'color' : '#192229'});
+                }
+            }, 100);
+        });
+    }, 100);
+}
 

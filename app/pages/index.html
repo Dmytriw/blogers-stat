@@ -98,7 +98,7 @@
             <div class="form__part__title">
               Фильтр по дате:
             </div>
-            <div class="form__part__inputs">
+            <div class="form__part__inputs form__part__inputs-selector">
                 <div class="input__selsct input">
                     <input type="hidden" name="filterInput">
                   <svg xmlns="http://www.w3.org/2000/svg" width="8" height="4" viewBox="0 0 8 4" fill="none"><path d="M4.01739 3.99994L0 -6.10352e-05L8 -6.10352e-05L4.01739 3.99994Z" fill="#6A7B83"></path></svg>
@@ -121,9 +121,10 @@
               или
             </div>
             <div class="form__part__inputs" id="calendar">
-              <input onclick="pureJSCalendar.open('dd.MM.yyyy', 0, 0, 1, '2018-5-5', '2019-8-20', 'txtTest', 20)"  type="button" class="input input__short input_cal" value="Начало периода">
-              <input onclick="pureJSCalendar.open('dd.MM.yyyy', 0, 0, 1, '2018-5-5', '2019-8-20', 'txtTest', 20)" type="button" class="input input__short input_cal" value="Конец периода">
-                <input type="button" class="closeCalendar" value="" onclick="pureJSCalendar.close()" />
+              <input onclick="pureJSCalendar.open('dd.MM.yyyy', 0, 0, 1, '2018-5-5', '2019-8-20', 'txtTest', 20); calendarFunc(this);" value="Начало периода" type="button" class="input input__short input_cal firstData">
+              <input onclick="pureJSCalendar.open('dd.MM.yyyy', 0, 0, 1, '2018-5-5', '2019-8-20', 'txtTest', 20); calendarFunc(this);" value="Конец периода" type="button" class="input input__short input_cal lastData">
+              <input id="txtTest" type="hidden">
+              <input type="button" class="closeCalendar" value="" onclick="pureJSCalendar.close()" />
             </div>
           </div>
           <div class="filter__buttons flex">

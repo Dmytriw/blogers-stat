@@ -6,11 +6,11 @@ var pureJSCalendar = (function () {
 
     //check global variables for calendar widget and set default localization values
     if (window.months === undefined) {
-        window.months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+        window.months = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'];
     }
 
     if (window.shortDays === undefined) {
-        window.shortDays = ['MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT', 'SUN'];
+        window.shortDays = ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'];
     }
 
     //first day of week combinations array
