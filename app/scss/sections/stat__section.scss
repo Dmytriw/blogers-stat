@@ -401,17 +401,29 @@
   }
 }
 
+@media screen and (min-width: 750px) {
+  .header {
+    position: fixed;
+  }
+}
+
 @media screen and (max-width: 379px) {
   .stat__tile__coll {
     font-size: 13px;
   }
 }
 
+@media screen and (max-width: 381px) {
+  .stat__tile__one {
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+}
+
 @media screen and (max-width: 370px) {
   .stat__tiles_bigger {
     .stat__tile__title {
-      min-height: 55px;
-      font-size: 13px;
+      min-height: 36px;
     }
   }
   .stat__tile__title {
@@ -612,7 +624,7 @@
 
   .stat__table__call {
     &:nth-child(1) {
-      width: 170px;
+      width: 160px;
     }
     &:nth-child(2) {
       width: 65px;
@@ -899,6 +911,14 @@
   display: inline-block;
 }
 
+.stat__infographick__3 {
+  .stat__infographick__title {
+    br {
+      display: none;
+    }
+  }
+}
+
 @media screen and (max-width: 1180px) {
   .stat__table_1 {
     width: 100%;
@@ -950,6 +970,10 @@
       }
     }
   }
+}
+
+.stat__table {
+  position: relative;
 }
 
 @media screen and (max-width: 830px) {
@@ -1008,6 +1032,9 @@
       right: 0;
       left: 0;
     }
+    .thisScrollContainer {
+      bottom: 53px !important;
+    }
     .stat__table__row {
       display: none;
 
@@ -1023,6 +1050,28 @@
   }
   .stat__table__content {
     padding-right: 0;
+  }
+
+
+
+  .stat__table__rows::-webkit-scrollbar-button {
+    width:4px;
+  }
+  .stat__table__rows::-webkit-resizer{
+    width:4px;
+  }
+  .stat__table__rows::-webkit-scrollbar{
+    width: 4px;
+  }
+  .stat__table__content::-webkit-scrollbar-button {
+    height:4px;
+  }
+  .stat__table__content::-webkit-resizer{
+    height:4px;
+  }
+
+  .stat__table__content::-webkit-scrollbar{
+    height:4px;
   }
 }
 
@@ -1040,6 +1089,13 @@
     padding-right: 5px;
     br {
       display: none;
+    }
+  }
+  .stat__infographick__3 {
+    .stat__infographick__title {
+      br {
+        display: block;
+      }
     }
   }
 }
@@ -1060,6 +1116,13 @@
   }
   .hide__group {
     font-size: 13px;
+  }
+  .stat__infographick__3 {
+    .stat__infographick__title {
+      br {
+        display: none;
+      }
+    }
   }
 }
 
@@ -1444,5 +1507,48 @@
 .stat__diagramma_4 {
   .stat__diagramma__index {
     background-color: #FFEAA7;
+  }
+}
+
+
+
+
+.stat__table__content {
+  position: relative;
+}
+
+.thisScrollContainer {
+  position: absolute;
+  background-color: #fff;
+  height: 6px;
+  bottom: 13px;
+  right: 0;
+  left: 0;
+}
+
+.thisScroll {
+  position: absolute;
+  top: 2px;
+  bottom: 0;
+  left: 15px;
+  right: 15px;
+  background: #F1F1F1;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.thisScrollThumb {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 10px;
+  background-color: #C1C1C1;
+  width: 1px;
+}
+
+.showMoreBlock {
+  .thisScrollContainer {
+    bottom: 53px !important;
   }
 }
