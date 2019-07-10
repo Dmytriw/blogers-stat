@@ -4,13 +4,6 @@
     <list default="true" id="3e13581c-f3ad-4fff-9204-4d85cc227bbb" name="Default" comment="Правка 5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/pages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/pages/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/scss/sections/stat__section.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/sections/stat__section.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/main.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/maps/main.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/maps/main.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/custom.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/custom.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/maps/custom.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/maps/custom.min.js.map" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -784,14 +777,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="2201" />
-          <entry key="js" value="2653" />
+          <entry key="js" value="2655" />
           <entry key="scss" value="5586" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="2201" />
-          <entry key="JavaScript" value="2653" />
+          <entry key="JavaScript" value="2655" />
           <entry key="SCSS" value="5586" />
         </counts>
       </usages-collector>
@@ -1545,7 +1538,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scss/sections/stat__section.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="286">
@@ -1554,11 +1547,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/js/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="66" column="41" selection-start-line="66" selection-start-column="41" selection-end-line="66" selection-end-column="41" />
+            <state relative-caret-position="136">
+              <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -1687,8 +1680,8 @@
         <option value="$PROJECT_DIR$/app/scss/sections/header.scss" />
         <option value="$PROJECT_DIR$/app/scss/layout/settings.scss" />
         <option value="$PROJECT_DIR$/app/pages/index.html" />
-        <option value="$PROJECT_DIR$/app/js/common.js" />
         <option value="$PROJECT_DIR$/app/scss/sections/stat__section.scss" />
+        <option value="$PROJECT_DIR$/app/js/common.js" />
       </list>
     </option>
   </component>
@@ -2484,7 +2477,7 @@
       <workItem from="1562593879188" duration="13985000" />
       <workItem from="1562683045737" duration="249000" />
       <workItem from="1562683874931" duration="4764000" />
-      <workItem from="1562764551689" duration="8133000" />
+      <workItem from="1562764551689" duration="8421000" />
     </task>
     <task id="LOCAL-00001" summary="Правка">
       <created>1561646159268</created>
@@ -2619,11 +2612,18 @@
       <option name="project" value="LOCAL" />
       <updated>1562686713258</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Правка 5">
+      <created>1562773279822</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1562773279822</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5336606000" />
+    <option name="totallyTimeSpent" value="5336894000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2814,17 +2814,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="66" column="41" selection-start-line="66" selection-start-column="41" selection-end-line="66" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scss/sections/stat__section.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="1530" column="10" selection-start-line="1530" selection-start-column="10" selection-end-line="1530" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
         </state>
       </provider>
     </entry>

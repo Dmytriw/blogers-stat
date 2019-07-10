@@ -18,7 +18,7 @@ $(function () {
             thisScroll = $this.closest('.stat__table ').find('.thisScroll'),
             thisScrollThumb = thisScroll.find('.thisScrollThumb'),
             windowWidth =  $(window).width(),
-            scrollWidth = windowWidth - 60,
+            scrollWidth = windowWidth - 30,
             thumbWidth = scrollWidth / thisWidth * 100;
 
         if(thisWidth > thisContainerWidth) {
@@ -42,7 +42,7 @@ $(function () {
                 thisScroll = $this.closest('.stat__table ').find('.thisScroll'),
                 thisScrollThumb = thisScroll.find('.thisScrollThumb'),
                 windowWidth =  $(window).width(),
-                scrollWidth = windowWidth - 60,
+                scrollWidth = windowWidth - 30,
                 thumbWidth = scrollWidth / thisWidth * 100;
 
             if(thisWidth > thisContainerWidth) {
