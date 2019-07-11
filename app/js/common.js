@@ -168,10 +168,12 @@ $(function () {
     $('.stat__table').each(function () {
        var
            $this = $(this),
-           rowsLength = $this.find('.stat__table__row').length;
+           rowsLength = $this.find('.stat__table__row').length,
+           thisRows = $this.find('.stat__table__row');
 
-       if(rowsLength > 9) {
+       if(rowsLength > 8) {
            $this.addClass('showMoreBlock');
+           thisRows.slice(0, 8).addClass('showedRows');
        } else {
            $this.addClass('startAll');
        }
@@ -182,17 +184,26 @@ $(function () {
 
         var
             $this = $(this),
-            thisBlock = $this.closest('.stat__table');
+            thisBlock = $this.closest('.stat__table'),
+            thisRows = thisBlock.find('.stat__table__row'),
+            thisRowsLast = thisBlock.find('.stat__table__row').last(),
+            lastShowed = thisBlock.find('.showedRows').last().index(),
+            nextStep = lastShowed + 8;
 
-        if(!$this.hasClass('openedBlock')) {
-            thisBlock.addClass('shoeElements');
-            $this.addClass('openedBlock');
-            $this.text('Скрыть');
-        } else {
-            thisBlock.removeClass('shoeElements');
-            $this.removeClass('openedBlock');
+        if(!thisRowsLast.hasClass('showedRows')) {
+            thisRows.slice(lastShowed, nextStep).addClass('showedRows');
             $this.text('Показать ещё');
+            setTimeout(function(){
+                if(thisRowsLast.hasClass('showedRows')) {
+                    $this.text('Скрыть');
+                }
+            }, 50);
+
+        } else {
+            thisRows.removeClass('showedRows');
+            thisRows.slice(0, 8).addClass('showedRows');
         }
+
     });
 
 
