@@ -10,6 +10,37 @@ $(function () {
 
 
     ////////////////////////////////////////////
+    $('.stat__table__content').each(function () {
+        var
+            $this = $(this),
+            thisWidth = $this.find('.stat__table__header').width(),
+            thisContainerWidth = $this.width(),
+            thisScroll = $this.closest('.stat__table ').find('.thisScroll');
+
+        if(thisWidth > thisContainerWidth) {
+            thisScroll.closest('.thisScrollContainer').show();
+        } else {
+            thisScroll.closest('.thisScrollContainer').hide();
+        }
+    });
+
+    $(window).resize(function () {
+        $('.stat__table__content').each(function () {
+            var
+                $this = $(this),
+                thisWidth = $this.find('.stat__table__header').width(),
+                thisContainerWidth = $this.width(),
+                thisScroll = $this.closest('.stat__table ').find('.thisScroll');
+
+            if(thisWidth > thisContainerWidth) {
+                thisScroll.closest('.thisScrollContainer').show();
+            } else {
+                thisScroll.closest('.thisScrollContainer').hide();
+            }
+        });
+    });
+
+    ////////////////////////////////////////////
     $('.stat__table__content').scroll(function () {
         var
             $this = $(this),
