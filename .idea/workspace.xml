@@ -3,9 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="3e13581c-f3ad-4fff-9204-4d85cc227bbb" name="Default" comment="Правка 5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/scss/sections/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/sections/header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/scss/sections/stat__section.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/sections/stat__section.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/main.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/maps/main.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/maps/main.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/custom.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/custom.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/maps/custom.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/maps/custom.min.js.map" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -750,14 +754,14 @@
     <session id="151744776">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="13" />
-          <entry key="project.open.time.0" value="10" />
+          <entry key="project.closed" value="14" />
+          <entry key="project.open.time.0" value="11" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="15" />
+          <entry key="project.opened" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -765,7 +769,7 @@
           <entry key="css" value="3" />
           <entry key="html" value="12" />
           <entry key="js" value="30" />
-          <entry key="scss" value="30" />
+          <entry key="scss" value="32" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -773,21 +777,21 @@
           <entry key="CSS" value="3" />
           <entry key="HTML" value="12" />
           <entry key="JavaScript" value="30" />
-          <entry key="SCSS" value="30" />
+          <entry key="SCSS" value="32" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="2201" />
-          <entry key="js" value="2683" />
-          <entry key="scss" value="5594" />
+          <entry key="js" value="2725" />
+          <entry key="scss" value="5637" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="2201" />
-          <entry key="JavaScript" value="2683" />
-          <entry key="SCSS" value="5594" />
+          <entry key="JavaScript" value="2725" />
+          <entry key="SCSS" value="5637" />
         </counts>
       </usages-collector>
     </session>
@@ -1539,21 +1543,30 @@
     </favorites_list>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/scss/sections/stat__section.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="588" column="16" selection-start-line="588" selection-start-column="16" selection-end-line="588" selection-end-column="16" />
+            <state relative-caret-position="446">
+              <caret line="1557" column="14" selection-start-line="1557" selection-start-column="14" selection-end-line="1557" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/js/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+            <state relative-caret-position="374">
+              <caret line="67" column="30" selection-start-line="67" selection-start-column="30" selection-end-line="67" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scss/sections/header.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2978">
+              <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -1561,7 +1574,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/pages/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
+            <state relative-caret-position="18173">
               <caret line="1069" column="26" selection-start-line="1069" selection-start-column="26" selection-end-line="1069" selection-end-column="26" />
             </state>
           </provider>
@@ -1578,8 +1591,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ol</find>
-      <find>stat__table__call</find>
       <find>stat__table__row</find>
       <find>toll</find>
       <find>form__part__inputs</find>
@@ -1608,6 +1619,8 @@
       <find>stat__tile__title</find>
       <find>nth-child</find>
       <find>nth-child(7</find>
+      <find>box</find>
+      <find>thisScroll</find>
     </findStrings>
     <replaceStrings>
       <replace>\n</replace>
@@ -1679,11 +1692,11 @@
         <option value="$PROJECT_DIR$/dist/js/pureJSCalendar2.js" />
         <option value="$PROJECT_DIR$/dist/js/pureJSCalendar.js" />
         <option value="$PROJECT_DIR$/app/scss/sections/filter_stat.scss" />
-        <option value="$PROJECT_DIR$/app/scss/sections/header.scss" />
         <option value="$PROJECT_DIR$/app/scss/layout/settings.scss" />
         <option value="$PROJECT_DIR$/app/pages/index.html" />
-        <option value="$PROJECT_DIR$/app/scss/sections/stat__section.scss" />
+        <option value="$PROJECT_DIR$/app/scss/sections/header.scss" />
         <option value="$PROJECT_DIR$/app/js/common.js" />
+        <option value="$PROJECT_DIR$/app/scss/sections/stat__section.scss" />
       </list>
     </option>
   </component>
@@ -1866,7 +1879,7 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/node_modules/gulp" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../BlogersPretension/app/scss/sections/header.scss" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
@@ -2479,7 +2492,8 @@
       <workItem from="1562593879188" duration="13985000" />
       <workItem from="1562683045737" duration="249000" />
       <workItem from="1562683874931" duration="4764000" />
-      <workItem from="1562764551689" duration="10354000" />
+      <workItem from="1562764551689" duration="10448000" />
+      <workItem from="1562828576363" duration="1322000" />
     </task>
     <task id="LOCAL-00001" summary="Правка">
       <created>1561646159268</created>
@@ -2628,11 +2642,18 @@
       <option name="project" value="LOCAL" />
       <updated>1562773306655</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Правка 5">
+      <created>1562775238486</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1562775238486</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5338827000" />
+    <option name="totallyTimeSpent" value="5340243000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2647,7 +2668,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4942717" visible="true" weight="0.21543624" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4942717" visible="true" weight="0.2181208" />
       <window_info id="Structure" order="1" weight="0.24966443" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -2686,7 +2707,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Правка 5" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/scss/sections/review__popup.scss" />
     <entry file="file://$PROJECT_DIR$/app/scss/sections/about__second.scss" />
     <entry file="file://$PROJECT_DIR$/app/scss/sections/section__second.scss" />
     <entry file="file://$PROJECT_DIR$/app/scss/layout/fonts.scss">
@@ -2795,13 +2815,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scss/sections/header.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scss/layout/settings.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="259">
@@ -2818,22 +2831,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/pages/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
+        <state relative-caret-position="18173">
           <caret line="1069" column="26" selection-start-line="1069" selection-start-column="26" selection-end-line="1069" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scss/sections/stat__section.scss">
+    <entry file="file://$PROJECT_DIR$/../BlogersPretension/app/scss/sections/header.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="588" column="16" selection-start-line="588" selection-start-column="16" selection-end-line="588" selection-end-column="16" />
+        <state relative-caret-position="51">
+          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scss/sections/header.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2978">
+          <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+        <state relative-caret-position="374">
+          <caret line="67" column="30" selection-start-line="67" selection-start-column="30" selection-end-line="67" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scss/sections/stat__section.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="1557" column="14" selection-start-line="1557" selection-start-column="14" selection-end-line="1557" selection-end-column="14" />
         </state>
       </provider>
     </entry>

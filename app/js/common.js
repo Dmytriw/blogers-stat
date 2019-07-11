@@ -10,66 +10,17 @@ $(function () {
 
 
     ////////////////////////////////////////////
-    $('.stat__table__content').each(function () {
-        var
-            $this = $(this),
-            thisWidth = $this.find('.stat__table__header').width(),
-            thisContainerWidth = $this.width(),
-            thisScroll = $this.closest('.stat__table ').find('.thisScroll'),
-            thisScrollThumb = thisScroll.find('.thisScrollThumb'),
-            windowWidth =  $(window).width(),
-            scrollWidth = windowWidth - 30,
-            thumbWidth = scrollWidth / thisWidth * 100;
-
-        if(thisWidth > thisContainerWidth) {
-            thisScroll.closest('.thisScrollContainer').show();
-        } else {
-            thisScroll.closest('.thisScrollContainer').hide();
-        }
-        console.log(thisWidth)
-        console.log(thisContainerWidth)
-        setTimeout(function(){
-            thisScrollThumb.css({'width' : thumbWidth+'%'});
-        }, 500);
-    });
-
-    $(window).resize(function () {
-        $('.stat__table__content').each(function () {
-            var
-                $this = $(this),
-                thisWidth = $this.find('.stat__table__header').width(),
-                thisContainerWidth = $this.width(),
-                thisScroll = $this.closest('.stat__table ').find('.thisScroll'),
-                thisScrollThumb = thisScroll.find('.thisScrollThumb'),
-                windowWidth =  $(window).width(),
-                scrollWidth = windowWidth - 30,
-                thumbWidth = scrollWidth / thisWidth * 100;
-
-            if(thisWidth > thisContainerWidth) {
-                thisScroll.closest('.thisScrollContainer').show();
-            } else {
-                thisScroll.closest('.thisScrollContainer').hide();
-            }
-
-            setTimeout(function(){
-                thisScrollThumb.css({'width' : thumbWidth+'%'});
-            }, 500);
-        });
-    });
-
     $('.stat__table__content').scroll(function () {
         var
             $this = $(this),
             thisWidth = $this.find('.stat__table__header ').width(),
+            thisContainerWidth = $this.width(),
             thisScroll = $this.closest('.stat__table ').find('.thisScroll'),
             thisScrollThumb = thisScroll.find('.thisScrollThumb'),
-            windowWidth =  $(window).width(),
-            scrollWidth = windowWidth - 30,
-            thumbWidth = scrollWidth / thisWidth * 100,
             scrollLeft = $this.scrollLeft(),
-            scrollPos = 100 * scrollLeft / (thisWidth);
+            scrollPos = 100 * scrollLeft / (thisWidth - thisContainerWidth);
 
-        thisScrollThumb.css({'width' : thumbWidth+'%', 'left' : scrollPos+'%'});
+        thisScrollThumb.css({'left' : scrollPos+'%'});
     });
 
 

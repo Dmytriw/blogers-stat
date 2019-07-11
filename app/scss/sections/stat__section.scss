@@ -1531,10 +1531,20 @@
   top: 2px;
   bottom: 0;
   left: 15px;
-  right: 15px;
+  right: 80px;
   background: #F1F1F1;
   border-radius: 10px;
-  overflow: hidden;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -65px;
+    width: 70px;
+    background: #F1F1F1;
+    border-radius: 10px;
+  }
 }
 
 .thisScrollThumb {
@@ -1544,7 +1554,8 @@
   left: 0;
   border-radius: 10px;
   background-color: #C1C1C1;
-  width: 1px;
+  z-index: 10;
+  width: 65px;
 }
 
 .showMoreBlock {
