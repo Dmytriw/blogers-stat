@@ -202,6 +202,7 @@ $(function () {
         } else {
             thisRows.removeClass('showedRows');
             thisRows.slice(0, 8).addClass('showedRows');
+            $this.text('Показать ещё');
         }
 
     });

@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3e13581c-f3ad-4fff-9204-4d85cc227bbb" name="Default" comment="Правка 6">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/scss/sections/stat__section.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/sections/stat__section.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -776,16 +775,16 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="2477" />
-          <entry key="js" value="3034" />
+          <entry key="html" value="2488" />
+          <entry key="js" value="3035" />
           <entry key="scss" value="5667" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="2477" />
-          <entry key="JavaScript" value="3034" />
+          <entry key="HTML" value="2488" />
+          <entry key="JavaScript" value="3035" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="SCSS" value="5667" />
         </counts>
@@ -1540,20 +1539,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scss/sections/stat__section.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="1035" column="16" selection-start-line="1035" selection-start-column="16" selection-end-line="1035" selection-end-column="16" />
+            <state relative-caret-position="327">
+              <caret line="1526" column="14" lean-forward="true" selection-start-line="1526" selection-start-column="14" selection-end-line="1526" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/js/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3349">
-              <caret line="197" column="38" selection-start-line="197" selection-start-column="38" selection-end-line="197" selection-end-column="38" />
+            <state relative-caret-position="531">
+              <caret line="204" column="39" selection-start-line="204" selection-start-column="39" selection-end-line="204" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -1570,8 +1569,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/pages/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2707">
-              <caret line="2929" column="21" selection-start-line="2929" selection-start-column="21" selection-end-line="2929" selection-end-column="21" />
+            <state relative-caret-position="541">
+              <caret line="2931" column="6" selection-start-line="2931" selection-start-column="6" selection-end-line="2931" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -1699,9 +1698,9 @@
         <option value="$PROJECT_DIR$/app/scss/sections/filter_stat.scss" />
         <option value="$PROJECT_DIR$/app/scss/layout/settings.scss" />
         <option value="$PROJECT_DIR$/app/scss/sections/header.scss" />
-        <option value="$PROJECT_DIR$/app/js/common.js" />
-        <option value="$PROJECT_DIR$/app/pages/index.html" />
         <option value="$PROJECT_DIR$/app/scss/sections/stat__section.scss" />
+        <option value="$PROJECT_DIR$/app/pages/index.html" />
+        <option value="$PROJECT_DIR$/app/js/common.js" />
       </list>
     </option>
   </component>
@@ -2500,7 +2499,7 @@
       <workItem from="1562764551689" duration="10448000" />
       <workItem from="1562828576363" duration="2636000" />
       <workItem from="1562862416220" duration="4077000" />
-      <workItem from="1562933700563" duration="481000" />
+      <workItem from="1562933700563" duration="1275000" />
     </task>
     <task id="LOCAL-00001" summary="Правка">
       <created>1561646159268</created>
@@ -2677,11 +2676,18 @@
       <option name="project" value="LOCAL" />
       <updated>1562865897553</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Правка 6">
+      <created>1562934364376</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1562934364376</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5346115000" />
+    <option name="totallyTimeSpent" value="5346909000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2858,13 +2864,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3349">
-          <caret line="197" column="38" selection-start-line="197" selection-start-column="38" selection-end-line="197" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scss/sections/header.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -2879,17 +2878,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/pages/index.html">
+    <entry file="file://$PROJECT_DIR$/app/scss/sections/stat__section.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2707">
-          <caret line="2929" column="21" selection-start-line="2929" selection-start-column="21" selection-end-line="2929" selection-end-column="21" />
+        <state relative-caret-position="327">
+          <caret line="1526" column="14" lean-forward="true" selection-start-line="1526" selection-start-column="14" selection-end-line="1526" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scss/sections/stat__section.scss">
+    <entry file="file://$PROJECT_DIR$/app/pages/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="1035" column="16" selection-start-line="1035" selection-start-column="16" selection-end-line="1035" selection-end-column="16" />
+        <state relative-caret-position="541">
+          <caret line="2931" column="6" selection-start-line="2931" selection-start-column="6" selection-end-line="2931" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="531">
+          <caret line="204" column="39" selection-start-line="204" selection-start-column="39" selection-end-line="204" selection-end-column="39" />
         </state>
       </provider>
     </entry>
