@@ -1033,7 +1033,7 @@
       left: 0;
     }
     .thisScrollContainer {
-      bottom: 53px !important;
+      bottom: 39px !important;
     }
     .stat__table__row {
       display: none;
@@ -1520,16 +1520,17 @@
 .thisScrollContainer {
   position: absolute;
   background-color: #fff;
-  height: 6px;
-  bottom: 13px;
+  height: 20px;
+  bottom: 1px;
   right: 0;
   left: 0;
+  z-index: 20;
 }
 
 .thisScroll {
   position: absolute;
   top: 2px;
-  bottom: 0;
+  height: 4px;
   left: 15px;
   right: 80px;
   background: #F1F1F1;
@@ -1560,7 +1561,7 @@
 
 .showMoreBlock {
   .thisScrollContainer {
-    bottom: 53px !important;
+    bottom: 39px !important;
   }
 }
 
