@@ -2,6 +2,10 @@
   position: relative;
 }
 
+.wrapper {
+  min-height: calc(100vh - 67px);
+}
+
 .stat__nav__container {
   background-color: #fff;
   position: relative;
