@@ -1,0 +1,2945 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Блогеры Инстаграма v2.4</title>
+  <link rel="shortcut icon" href="img/icons/favicon.ico" />
+  <link rel="stylesheet" href="/css/vendor.min.css">
+  <link rel="stylesheet" href="/css/main.min.css">
+  <script type="text/javascript" src="js/pureJSCalendar.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap&subset=cyrillic" rel="stylesheet">
+<body>
+
+
+
+<header class="header">
+  <div class="container flex">
+    <div class="header__logo flex">
+      <a href="#" class="header__logo__img">
+        <img src="/img/icons/logo.png" alt="">
+      </a>
+      <div class="header__logo__right">
+        <a href="#" class="header__logo__name">
+          Блогеры Инстаграма v2.4
+        </a>
+        <a href="#" class="header__logo__inst">
+          @easyprbot
+        </a>
+      </div>
+    </div>
+    <div class="header__nav__container">
+      <div class="nav__mob__title flex">
+        Меню
+        <a href="#" class="vav__close">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 1L13 13M13 1L1 13" stroke="#B4BDC1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+      <ul class="header__nav__ul flex">
+        <li>
+          <a href="#">
+            Все блогеры
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Гивы
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Мои промокоды
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Предложить блогера
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Mой заказ
+            <span>0</span>
+          </a>
+        </li>
+      </ul>
+      <div class="nav__overlay"></div>
+    </div>
+    <a href="#" class="hamburger__button">
+      <span></span><span></span><span></span>
+    </a>
+  </div>
+  <div class="stat__nav__container flex">
+    <ul class="stat__nav flex">
+      <li class="stat__nav__item">
+        <a href="#stat1" class="active">Общая</a>
+      </li>
+      <li class="stat__nav__item">
+        <a href="#stat2">По блогерам</a>
+      </li>
+      <li class="stat__nav__item">
+        <a href="#stat3">По гивам</a>
+      </li>
+    </ul>
+    <a href="#" class="hamburger__button">
+      <span></span><span></span><span></span>
+    </a>
+  </div>
+</header>
+
+
+<div class="wrapper stat__page">
+  <div class="filter__block">
+    <div class="container">
+      <div class="filter__header flex">
+        <div class="filter__header__title">
+          Статистика
+        </div>
+      </div>
+      <div class="filter__container filter__container-stat">
+        <form class="filter__form flex">
+          <div class="form__part">
+            <div class="form__part__title">
+              Фильтр по дате:
+            </div>
+            <div class="form__part__inputs form__part__inputs-selector">
+                <div class="input__selsct input">
+                    <input type="hidden" name="filterInput">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="8" height="4" viewBox="0 0 8 4" fill="none"><path d="M4.01739 3.99994L0 -6.10352e-05L8 -6.10352e-05L4.01739 3.99994Z" fill="#6A7B83"></path></svg>
+                  <div class="input__select__text">
+                        Интервал
+                    </div>
+                    <div class="input__options">
+                        <div class="input__option">Сегодня</div>
+                        <div class="input__option">Вчера</div>
+                        <div class="input__option">Позавчера</div>
+                        <div class="input__option">3 дня</div>
+                        <div class="input__option">7 дней</div>
+                        <div class="input__option">30 дней</div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="form__part">
+            <div class="form__part__title">
+              или
+            </div>
+            <div class="form__part__inputs" id="calendar">
+              <input onclick="pureJSCalendar.open('dd.MM.yyyy', 0, 0, 1, '2018-5-5', '2019-8-20', 'txtTest', 20); calendarFunc(this);" value="Начало периода" type="button" class="input input__short input_cal firstData">
+              <input onclick="pureJSCalendar.open('dd.MM.yyyy', 0, 0, 1, '2018-5-5', '2019-8-20', 'txtTest', 20); calendarFunc(this);" value="Конец периода" type="button" class="input input__short input_cal lastData">
+              <input id="txtTest" type="hidden">
+              <input type="button" class="closeCalendar" value="" onclick="pureJSCalendar.close()" />
+            </div>
+          </div>
+          <div class="filter__buttons flex">
+            <input type="submit" class="filter__go" value="Применить" >
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="stat__section">
+    <div class="container">
+      <div id="stat1" class="stat__grope">
+        <div class="stat__grope__header flex">
+          <h3 class="stat__grope__title">
+            Общая
+          </h3>
+          <a href="#" class="hide__group flex">
+            <span class="hide__groupText">Скрыть раздел</span>
+            <span class="hide__group__button"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" fill="none"><path d="M5.02174 5L0 0L10 0L5.02174 5Z" fill="#6A7B83"/></svg></span>
+          </a>
+        </div>
+        <div class="stat__grope__content flex">
+
+          <div class="stat__tiles stat__general__1 flex">
+            <div class="stat__tile__one stat__tiles_bigger">
+              <div class="stat__tile__title">
+                Количество заявок
+              </div>
+              <div class="stat__tile__table">
+                <div class="stat__tile__row flex">
+                  <div class="stat__tile__coll">За период</div>
+                  <div class="stat__tile__coll">8 935</div>
+                </div>
+                <div class="stat__tile__row flex">
+                  <div class="stat__tile__coll">Всего</div>
+                  <div class="stat__tile__coll">8 935</div>
+                </div>
+              </div>
+            </div>
+            <div class="stat__tile__one">
+              <div class="stat__tile__title">
+                Количество подписчиков
+              </div>
+              <div class="stat__tile__table">
+                <div class="stat__tile__row flex">
+                  <div class="stat__tile__coll">Активных</div>
+                  <div class="stat__tile__coll">10 293</div>
+                </div>
+                <div class="stat__tile__row flex">
+                  <div class="stat__tile__coll">Неактивных</div>
+                  <div class="stat__tile__coll">4 367</div>
+                </div>
+              </div>
+            </div>
+            <div class="stat__tile__one last__order">
+              <div class="stat__tile__title">
+                Рост и убыль подписчиков
+              </div>
+              <div class="stat__tile__table">
+                <div class="stat__tile__row flex">
+                  <div class="stat__tile__coll">Прирост</div>
+                  <div class="stat__tile__coll">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none"><path d="M3.00012 1L3.00012 9M3.00012 1L1.00012 2.77778M3.00012 1L5.00012 2.77778" stroke="#41CD6E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    2 000
+                  </div>
+                </div>
+                <div class="stat__tile__row flex">
+                  <div class="stat__tile__coll">Убыль</div>
+                  <div class="stat__tile__coll">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none"><path d="M3.00012 9L3.00012 1M3.00012 9L5.00012 7.22222M3.00012 9L1.00012 7.22222" stroke="#DB4948" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    500
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="stat__tile__one">
+              <div class="stat__tile__title">
+                Средний чек у блогеров для
+              </div>
+              <div class="stat__tile__table">
+                <div class="stat__tile__row flex">
+                  <div class="stat__tile__coll">Заявок</div>
+                  <div class="stat__tile__coll">2 500 ₽</div>
+                </div>
+                <div class="stat__tile__row flex">
+                  <div class="stat__tile__coll">Промокодов</div>
+                  <div class="stat__tile__coll">1 456 ₽</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="stat__tiles stat__general__2 flex">
+            <div class="stat__tile__one">
+              <div class="stat__tile__title">
+                Активных блогеров в боте
+              </div>
+              <div class="stat__tile__table">
+                <div class="stat__tile__row flex">
+                  <div class="stat__tile__coll">За период</div>
+                  <div class="stat__tile__coll">1 850</div>
+                </div>
+                <div class="stat__tile__row flex">
+                  <div class="stat__tile__coll">Всего</div>
+                  <div class="stat__tile__coll">9 367</div>
+                </div>
+              </div>
+            </div>
+            <div class="stat__tile__one">
+              <div class="stat__tile__title">
+                Добавлено блогеров
+              </div>
+              <div class="stat__tile__table">
+                <div class="stat__tile__row flex">
+                  <div class="stat__tile__coll">За период</div>
+                  <div class="stat__tile__coll">589</div>
+                </div>
+                <div class="stat__tile__row flex">
+                  <div class="stat__tile__coll">Всего</div>
+                  <div class="stat__tile__coll">780</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="stat__tiles stat__general__3 flex">
+            <div class="stat__tile__one">
+              <div class="stat__tile__title">
+                Оборот по блогерам для
+              </div>
+              <div class="stat__tile__table">
+                <div class="stat__tile__row flex">
+                  <div class="stat__tile__coll">Заявок</div>
+                  <div class="stat__tile__coll">10,3 м</div>
+                </div>
+                <div class="stat__tile__row flex">
+                  <div class="stat__tile__coll">Промокодов</div>
+                  <div class="stat__tile__coll">500,3 т</div>
+                </div>
+              </div>
+            </div>
+            <div class="stat__tile__one">
+              <div class="stat__tile__title">
+                Среднее кол-во блогеров в заказе
+              </div>
+              <div class="stat__tile__table">
+                <div class="stat__tile__row flex">
+                  <div class="stat__tile__coll">За период</div>
+                  <div class="stat__tile__coll">3,5</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="stat__tiles stat__general__4 flex">
+            <div class="stat__tile__one">
+              <div class="stat__tile__title">
+                Заявок на блогеров в среднем в
+              </div>
+              <div class="stat__tile__table">
+                <div class="stat__tile__row flex">
+                  <div class="stat__tile__coll">Сутки</div>
+                  <div class="stat__tile__coll">621</div>
+                </div>
+                <div class="stat__tile__row flex">
+                  <div class="stat__tile__coll">Неделю</div>
+                  <div class="stat__tile__coll">831</div>
+                </div>
+                <div class="stat__tile__row flex">
+                  <div class="stat__tile__coll">Неделю</div>
+                  <div class="stat__tile__coll">1 953</div>
+                </div>
+              </div>
+            </div>
+            <div class="stat__tile__one">
+              <div class="stat__tile__title">
+                Промокодов на блогеров в среднем в
+              </div>
+              <div class="stat__tile__table">
+                <div class="stat__tile__row flex">
+                  <div class="stat__tile__coll">Сутки</div>
+                  <div class="stat__tile__coll">268</div>
+                </div>
+                <div class="stat__tile__row flex">
+                  <div class="stat__tile__coll">Неделю</div>
+                  <div class="stat__tile__coll">897</div>
+                </div>
+                <div class="stat__tile__row flex">
+                  <div class="stat__tile__coll">Неделю</div>
+                  <div class="stat__tile__coll">1 569</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="stat__tiles stat__tiles_bigger  stat__general__5 flex">
+            <div class="stat__tile__one">
+              <div class="stat__tile__title">
+                Промокоды на гивы в
+              </div>
+              <div class="stat__tile__table">
+                <div class="stat__tile__row flex">
+                  <div class="stat__tile__coll">Сутки</div>
+                  <div class="stat__tile__coll">19</div>
+                </div>
+                <div class="stat__tile__row flex">
+                  <div class="stat__tile__coll">Неделю</div>
+                  <div class="stat__tile__coll">147</div>
+                </div>
+                <div class="stat__tile__row flex">
+                  <div class="stat__tile__coll">Неделю</div>
+                  <div class="stat__tile__coll">569</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="stat__tiles stat__general__6 flex">
+            <div class="stat__tile__one">
+              <div class="stat__tile__title">
+                Переходы из чатов и каналов в
+              </div>
+              <div class="stat__tile__table">
+                <div class="stat__tile__row flex">
+                  <div class="stat__tile__coll">Сутки</div>
+                  <div class="stat__tile__coll">56</div>
+                </div>
+                <div class="stat__tile__row flex">
+                  <div class="stat__tile__coll">Неделю</div>
+                  <div class="stat__tile__coll">351</div>
+                </div>
+                <div class="stat__tile__row flex">
+                  <div class="stat__tile__coll">Неделю</div>
+                  <div class="stat__tile__coll">1 254</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="stat__tiles stat__general__7 flex">
+            <div class="stat__tile__one">
+              <div class="stat__tile__title">
+                Заявки на вступление в
+              </div>
+              <div class="stat__tile__table">
+                <div class="stat__tile__row flex">
+                  <div class="stat__tile__coll">Сутки</div>
+                  <div class="stat__tile__coll">56</div>
+                </div>
+                <div class="stat__tile__row flex">
+                  <div class="stat__tile__coll">Неделю</div>
+                  <div class="stat__tile__coll">351</div>
+                </div>
+                <div class="stat__tile__row flex">
+                  <div class="stat__tile__coll">Неделю</div>
+                  <div class="stat__tile__coll">1 254</div>
+                </div>
+              </div>
+            </div>
+            <div class="stat__tile__one">
+              <div class="stat__tile__title">
+                Корректировки на вступление в
+              </div>
+              <div class="stat__tile__table">
+                <div class="stat__tile__row flex">
+                  <div class="stat__tile__coll">Сутки</div>
+                  <div class="stat__tile__coll">26</div>
+                </div>
+                <div class="stat__tile__row flex">
+                  <div class="stat__tile__coll">Неделю</div>
+                  <div class="stat__tile__coll">75</div>
+                </div>
+                <div class="stat__tile__row flex">
+                  <div class="stat__tile__coll">Неделю</div>
+                  <div class="stat__tile__coll">378</div>
+                </div>
+              </div>
+            </div>
+            <div class="stat__tile__one">
+              <div class="stat__tile__title">
+                Отказы на вступление в
+              </div>
+              <div class="stat__tile__table">
+                <div class="stat__tile__row flex">
+                  <div class="stat__tile__coll">Сутки</div>
+                  <div class="stat__tile__coll">19</div>
+                </div>
+                <div class="stat__tile__row flex">
+                  <div class="stat__tile__coll">Неделю</div>
+                  <div class="stat__tile__coll">68</div>
+                </div>
+                <div class="stat__tile__row flex">
+                  <div class="stat__tile__coll">Неделю</div>
+                  <div class="stat__tile__coll">293</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="stat__tiles stat__general__8 flex">
+            <div class="stat__tile__one">
+              <div class="stat__tile__title">
+                Отзывы на коммерцию в
+              </div>
+              <div class="stat__tile__table">
+                <div class="stat__tile__row flex">
+                  <div class="stat__tile__coll">Сутки</div>
+                  <div class="stat__tile__coll">156</div>
+                </div>
+                <div class="stat__tile__row flex">
+                  <div class="stat__tile__coll">Неделю</div>
+                  <div class="stat__tile__coll">568</div>
+                </div>
+                <div class="stat__tile__row flex">
+                  <div class="stat__tile__coll">Неделю</div>
+                  <div class="stat__tile__coll">1 239</div>
+                </div>
+              </div>
+            </div>
+            <div class="stat__tile__one">
+              <div class="stat__tile__title">
+                Отзывы на блогеров в
+              </div>
+              <div class="stat__tile__table">
+                <div class="stat__tile__row flex">
+                  <div class="stat__tile__coll">Сутки</div>
+                  <div class="stat__tile__coll">268</div>
+                </div>
+                <div class="stat__tile__row flex">
+                  <div class="stat__tile__coll">Неделю</div>
+                  <div class="stat__tile__coll">897</div>
+                </div>
+                <div class="stat__tile__row flex">
+                  <div class="stat__tile__coll">Неделю</div>
+                  <div class="stat__tile__coll">1 649</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            <div class="stat__grope__button flex">
+                <a href="#" class="grope__bidden__bottom">
+                    Скрыть раздел
+                </a>
+            </div>
+        </div>
+
+      </div>
+
+
+      <div id="stat2"  class="stat__grope">
+        <div class="stat__grope__header flex">
+          <h3 class="stat__grope__title">
+            По блогерам
+          </h3>
+          <a href="#" class="hide__group flex">
+            <span class="hide__groupText">Скрыть раздел</span>
+            <span class="hide__group__button"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" fill="none"><path d="M5.02174 5L0 0L10 0L5.02174 5Z" fill="#6A7B83"/></svg></span>
+          </a>
+        </div>
+        <div class="stat__grope__content flex">
+          <div class="stat__table stat__table_1">
+            <div class="stat__table__title">
+              Статистика по блогерам
+            </div>
+            <div class="stat__table__content">
+              <div class="stat__table__header flex">
+                <a href="#" class="stat__table__call">
+                  Блогер <svg xmlns="http://www.w3.org/2000/svg" width="8" height="4" viewBox="0 0 8 4" fill="none"><path d="M4.01739 3.99994L0 -6.10352e-05L8 -6.10352e-05L4.01739 3.99994Z" fill="#6A7B83"/></svg>
+                </a>
+                <a href="#" class="stat__table__call">
+                  Отзывы <svg xmlns="http://www.w3.org/2000/svg" width="8" height="4" viewBox="0 0 8 4" fill="none"><path d="M4.01739 3.99994L0 -6.10352e-05L8 -6.10352e-05L4.01739 3.99994Z" fill="#6A7B83"/></svg>
+                </a>
+                <a href="#" class="stat__table__call">
+                  Заявки <svg xmlns="http://www.w3.org/2000/svg" width="8" height="4" viewBox="0 0 8 4" fill="none"><path d="M4.01739 3.99994L0 -6.10352e-05L8 -6.10352e-05L4.01739 3.99994Z" fill="#6A7B83"/></svg>
+                </a>
+                <a href="#" class="stat__table__call">
+                  Промокодов <svg xmlns="http://www.w3.org/2000/svg" width="8" height="4" viewBox="0 0 8 4" fill="none"><path d="M4.01739 3.99994L0 -6.10352e-05L8 -6.10352e-05L4.01739 3.99994Z" fill="#6A7B83"/></svg>
+                </a>
+                <a href="#" class="stat__table__call">
+                  Отказов <svg xmlns="http://www.w3.org/2000/svg" width="8" height="4" viewBox="0 0 8 4" fill="none"><path d="M4.01739 3.99994L0 -6.10352e-05L8 -6.10352e-05L4.01739 3.99994Z" fill="#6A7B83"/></svg>
+                </a>
+                <a href="#" class="stat__table__call">
+                  Просроченных <svg xmlns="http://www.w3.org/2000/svg" width="8" height="4" viewBox="0 0 8 4" fill="none"><path d="M4.01739 3.99994L0 -6.10352e-05L8 -6.10352e-05L4.01739 3.99994Z" fill="#6A7B83"/></svg>
+                </a>
+                <a href="#" class="stat__table__call">
+                  Оплата <svg xmlns="http://www.w3.org/2000/svg" width="8" height="4" viewBox="0 0 8 4" fill="none"><path d="M4.01739 3.99994L0 -6.10352e-05L8 -6.10352e-05L4.01739 3.99994Z" fill="#6A7B83"/></svg>
+                </a>
+              </div>
+              <div class="stat__table__rows">
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">dasha_kozlovskaya</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">1 205 780 ₽</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">kreida</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">580 ₽</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">kreida</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">580 ₽</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">kreida</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">580 ₽</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">kreida</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">580 ₽</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">kreida</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">580 ₽</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">kreida</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">580 ₽</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">kreida</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">580 ₽</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">kreida</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">580 ₽</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">kreida</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">580 ₽</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">kreida</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">580 ₽</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">kreida</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">580 ₽</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">kreida</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">580 ₽</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">kreida</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">580 ₽</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">kreida</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">580 ₽</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">kreida</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">580 ₽</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">kreida</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">580 ₽</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">kreida</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">580 ₽</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">kreida</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">580 ₽</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">kreida</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">580 ₽</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">kreida</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">580 ₽</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">kreida</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">580 ₽</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">kreida</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">580 ₽</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">kreida</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">580 ₽</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">kreida</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">580 ₽</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">kreida</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">580 ₽</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">kreida</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">580 ₽</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">kreida</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">580 ₽</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">kreida</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">580 ₽</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">kreida</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">580 ₽</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">kreida</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">580 ₽</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">kreida</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">580 ₽</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">kreida</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">580 ₽</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">kreida</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">580 ₽</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">kreida</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">580 ₽</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">kreida</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">580 ₽</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">kreida</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">580 ₽</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">kreida</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">580 ₽</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">kreida</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">580 ₽</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">kreida</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">580 ₽</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">kreida</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">580 ₽</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">kreida</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">580 ₽</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">kreida</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">2%</div>
+                  <div class="stat__table__call">580 ₽</div>
+                </div>
+              </div>
+            </div>
+              <div class="thisScrollContainer">
+                  <div class="thisScroll">
+                      <div class="thisScrollThumb"></div>
+                  </div>
+              </div>
+            <a href="#" class="show__bore__stat">
+              Показать ещё
+            </a>
+          </div>
+
+          <div class="stat__table stat__table_2 small__table">
+            <div class="stat__table__title">
+              Топ по темам заявок
+            </div>
+            <div class="stat__table__content">
+              <div class="stat__table__header flex">
+                <div class="stat__table__call">
+                  Тема
+                </div>
+                <div class="stat__table__call">
+                  Заявки
+                </div>
+              </div>
+              <div class="stat__table__rows">
+                <div class="stat__table__row">
+                  <div class="stat__table__call">Бизнес</div>
+                  <div class="stat__table__call">1 605</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call">Саморазвитие</div>
+                  <div class="stat__table__call">711</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call">Отношения</div>
+                  <div class="stat__table__call">331</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call">Мода и стиль</div>
+                  <div class="stat__table__call">224</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call">Бизнес</div>
+                  <div class="stat__table__call">38</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call">Саморазвитие</div>
+                  <div class="stat__table__call">45</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call">Обработка фото</div>
+                  <div class="stat__table__call">31</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call">Фитнес</div>
+                  <div class="stat__table__call">21</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call">Саморазвитие</div>
+                  <div class="stat__table__call">711</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call">Саморазвитие</div>
+                  <div class="stat__table__call">711</div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="show__bore__stat">
+              Показать ещё
+            </a>
+          </div>
+
+
+          <div class="stat__infographick stat__infographick__1">
+            <div class="stat__infographick__title">
+              Статусы заявок
+            </div>
+            <div class="stat__infographick__content">
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    Блогер отказал
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">1953</div>
+                    <div class="stat__infographick__num">51%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 51%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    Не зайдет
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">831</div>
+                    <div class="stat__infographick__num">22%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 22%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    Плохой визуальный ряд
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">621</div>
+                    <div class="stat__infographick__num">16%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 16%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    Просто отказ
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">290</div>
+                    <div class="stat__infographick__num">8%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 8%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    Мало подписчиков
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">52</div>
+                    <div class="stat__infographick__num">1%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 1%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    Нет концепции
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">52</div>
+                    <div class="stat__infographick__num">1%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 1%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    Мало подписчиков
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">52</div>
+                    <div class="stat__infographick__num">1%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 1%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    Мало подписчиков
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">52</div>
+                    <div class="stat__infographick__num">1%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 1%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    Мало подписчиков
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">52</div>
+                    <div class="stat__infographick__num">1%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 1%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    Мало подписчиков
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">52</div>
+                    <div class="stat__infographick__num">1%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 1%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="show__bore__stat">
+              Показать ещё
+            </a>
+          </div>
+
+          <div class="stat__infographick stat__infographick__2">
+            <div class="stat__infographick__title">
+              Топ причин отказов
+            </div>
+            <div class="stat__infographick__content">
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    Напишите в след. месяце
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">1953</div>
+                    <div class="stat__infographick__num">51%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 51%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    Не зайдет
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">831</div>
+                    <div class="stat__infographick__num">22%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 22%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    Плохой визуальный ряд
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">621</div>
+                    <div class="stat__infographick__num">16%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 16%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    Просто отказ
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">290</div>
+                    <div class="stat__infographick__num">8%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 8%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    Мало подписчиков
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">52</div>
+                    <div class="stat__infographick__num">1%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 1%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    Нет концепции
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">52</div>
+                    <div class="stat__infographick__num">1%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 1%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    Мало подписчиков
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">52</div>
+                    <div class="stat__infographick__num">1%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 1%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    Мало подписчиков
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">52</div>
+                    <div class="stat__infographick__num">1%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 1%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    Мало подписчиков
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">52</div>
+                    <div class="stat__infographick__num">1%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 1%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    Мало подписчиков
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">52</div>
+                    <div class="stat__infographick__num">1%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 1%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="show__bore__stat">
+              Показать ещё
+            </a>
+          </div>
+
+          <div class="stat__table stat__table_3 middle__table">
+            <div class="stat__table__title">
+              Распределение по ценам
+            </div>
+            <div class="stat__table__content">
+              <div class="stat__table__header flex">
+                <div class="stat__table__call">
+                  Диапазон цен
+                </div>
+                <div class="stat__table__call">
+                  Заявки
+                </div>
+                <div class="stat__table__call">
+                  Промокоды
+                </div>
+              </div>
+              <div class="stat__table__rows">
+                <div class="stat__table__row">
+                  <div class="stat__table__call">до 500 ₽</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">128</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call">501 - 1 000 ₽</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">128</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call">1 001 - 2 000 ₽</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">128</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call">2 001 - 5 000 ₽</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">128</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call">5 001 - 10 000 ₽</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">128</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call">10 001 - 20 000 ₽</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">128</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call">20 001 - 50 000 ₽</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">128</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call">от 50 001 ₽</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">128</div>
+                </div>
+              </div>
+            </div>
+              <div class="thisScrollContainer">
+                  <div class="thisScroll">
+                      <div class="thisScrollThumb"></div>
+                  </div>
+              </div>
+            <a href="#" class="show__bore__stat">
+              Показать ещё
+            </a>
+          </div>
+
+          <div class="stat__infographick stat__infographick__3">
+            <div class="stat__infographick__title">
+              Топ причин отказов на вступление <br>в бот
+            </div>
+            <div class="stat__infographick__content">
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    Напишите в след. месяце
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">1953</div>
+                    <div class="stat__infographick__num">51%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 51%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    Не зайдет
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">831</div>
+                    <div class="stat__infographick__num">22%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 22%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    Плохой визуальный ряд
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">621</div>
+                    <div class="stat__infographick__num">16%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 16%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    Просто отказ
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">290</div>
+                    <div class="stat__infographick__num">8%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 8%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    Мало подписчиков
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">52</div>
+                    <div class="stat__infographick__num">1%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 1%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    Нет концепции
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">52</div>
+                    <div class="stat__infographick__num">1%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 1%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    Мало подписчиков
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">52</div>
+                    <div class="stat__infographick__num">1%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 1%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    Мало подписчиков
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">52</div>
+                    <div class="stat__infographick__num">1%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 1%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    Мало подписчиков
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">52</div>
+                    <div class="stat__infographick__num">1%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 1%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    Мало подписчиков
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">52</div>
+                    <div class="stat__infographick__num">1%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 1%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="show__bore__stat">
+              Показать ещё
+            </a>
+          </div>
+
+          <div class="stat__infographick stat__infographick__4">
+            <div class="stat__infographick__title">
+              Топ причин корректировок на вступление в бот
+            </div>
+            <div class="stat__infographick__content">
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    Напишите в след. месяце
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">1953</div>
+                    <div class="stat__infographick__num">51%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 51%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    Не зайдет
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">831</div>
+                    <div class="stat__infographick__num">22%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 22%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    Плохой визуальный ряд
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">621</div>
+                    <div class="stat__infographick__num">16%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 16%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    Просто отказ
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">290</div>
+                    <div class="stat__infographick__num">8%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 8%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    Мало подписчиков
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">52</div>
+                    <div class="stat__infographick__num">1%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 1%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    Нет концепции
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">52</div>
+                    <div class="stat__infographick__num">1%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 1%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    Мало подписчиков
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">52</div>
+                    <div class="stat__infographick__num">1%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 1%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    Мало подписчиков
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">52</div>
+                    <div class="stat__infographick__num">1%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 1%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    Мало подписчиков
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">52</div>
+                    <div class="stat__infographick__num">1%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 1%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    Мало подписчиков
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">52</div>
+                    <div class="stat__infographick__num">1%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 1%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="show__bore__stat">
+              Показать ещё
+            </a>
+          </div>
+
+          <div class="stat__infographick stat__infographick__5">
+            <div class="stat__infographick__title">
+              Группировка по количеству отправленных заявок
+            </div>
+            <div class="stat__infographick__content">
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    1 блогер
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">1953</div>
+                    <div class="stat__infographick__num">51%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 51%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    2 блогера
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">831</div>
+                    <div class="stat__infographick__num">22%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 22%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    3 блогера
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">621</div>
+                    <div class="stat__infographick__num">16%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 16%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    4 блогера
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">290</div>
+                    <div class="stat__infographick__num">8%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 8%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    5 блогеров
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">52</div>
+                    <div class="stat__infographick__num">1%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 1%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    6-10 блогеров
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">52</div>
+                    <div class="stat__infographick__num">1%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 1%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    10-20 блогеров
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">52</div>
+                    <div class="stat__infographick__num">1%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 1%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="show__bore__stat">
+              Показать ещё
+            </a>
+          </div>
+
+          <div class="stat__table stat__table_4 small__table">
+            <div class="stat__table__title">
+              Интервалы между заявками
+            </div>
+            <div class="stat__table__content">
+              <div class="stat__table__header flex">
+                <div class="stat__table__call">
+                  Интервал
+                </div>
+                <div class="stat__table__call">
+                  Заявки
+                </div>
+              </div>
+              <div class="stat__table__rows">
+                <div class="stat__table__row">
+                  <div class="stat__table__call">1 час</div>
+                  <div class="stat__table__call">1 605</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call">1-12 часов</div>
+                  <div class="stat__table__call">711</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call">12-24 часа</div>
+                  <div class="stat__table__call">331</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call">1-2 дня</div>
+                  <div class="stat__table__call">224</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call">2-7 дней</div>
+                  <div class="stat__table__call">38</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call">7-14 дней</div>
+                  <div class="stat__table__call">45</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call">14-30 дней</div>
+                  <div class="stat__table__call">31</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call">Больше месяца</div>
+                  <div class="stat__table__call">21</div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="show__bore__stat">
+              Показать ещё
+            </a>
+          </div>
+
+          <div class="stat__infographick stat__infographick__6">
+            <div class="stat__infographick__title">
+              Заявки на сторис
+            </div>
+            <div class="stat__infographick__content">
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    15 секунд
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">1953</div>
+                    <div class="stat__infographick__num">51%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 51%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    30 секунд
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">831</div>
+                    <div class="stat__infographick__num">22%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 22%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    45 секунд
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">621</div>
+                    <div class="stat__infographick__num">16%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 16%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    60 секунд
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">290</div>
+                    <div class="stat__infographick__num">8%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 8%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    75 секунд
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">52</div>
+                    <div class="stat__infographick__num">1%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 1%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    90 секунд
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">52</div>
+                    <div class="stat__infographick__num">1%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 1%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="show__bore__stat">
+              Показать ещё
+            </a>
+          </div>
+
+          <div class="stat__table stat__table_5 small__table">
+            <div class="stat__table__title">
+              Повторные отправки заявок
+            </div>
+            <div class="stat__table__content">
+              <div class="stat__table__header flex">
+                <div class="stat__table__call">
+                  Количество
+                </div>
+                <div class="stat__table__call">
+                  Заявки
+                </div>
+              </div>
+              <div class="stat__table__rows">
+                <div class="stat__table__row">
+                  <div class="stat__table__call">1 отправка</div>
+                  <div class="stat__table__call">1 605</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call">2 отправки</div>
+                  <div class="stat__table__call">711</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call">3-5 отправок</div>
+                  <div class="stat__table__call">331</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call">6-8 отправок</div>
+                  <div class="stat__table__call">224</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call">Больше 9 отправок</div>
+                  <div class="stat__table__call">38</div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="show__bore__stat">
+              Показать ещё
+            </a>
+          </div>
+
+          <div class="stat__infographick stat__infographick__6">
+            <div class="stat__infographick__title">
+              Соотношение форматов
+            </div>
+            <div class="stat__infographick__content">
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    Сторис
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">1953</div>
+                    <div class="stat__infographick__num">51%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 51%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    Фото-пост
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">831</div>
+                    <div class="stat__infographick__num">22%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 22%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+              <div class="stat__infographick__one">
+                <div class="stat__infographick__header flex">
+                  <div class="stat__infographick__left">
+                    Видео-пост
+                  </div>
+                  <div class="stat__infographick__right flex">
+                    <div class="stat__infographick__num">621</div>
+                    <div class="stat__infographick__num">16%</div>
+                  </div>
+                </div>
+                <div class="stat__infographick__line">
+                  <div style="width: 16%" class="stat__infographick__procent"></div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="show__bore__stat">
+              Показать ещё
+            </a>
+          </div>
+
+          <div class="stat__table stat__table_6 middle__table">
+            <div class="stat__table__title">
+              Переходы из чатов и каналов
+            </div>
+            <div class="stat__table__content">
+              <div class="stat__table__header flex">
+                <div class="stat__table__call">
+                  Чат/канал
+                </div>
+                <div class="stat__table__call">
+                  Переходы по гивам
+                </div>
+                <div class="stat__table__call">
+                  Переходы по блогерам
+                </div>
+              </div>
+              <div class="stat__table__rows">
+                <div class="stat__table__row">
+                  <div class="stat__table__call">t.me/alenakdn</div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">128</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">t.me/alenakdn</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">128</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">t.me/alenakdn</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">128</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">t.me/alenakdn</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">128</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">t.me/alenakdn</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">128</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">t.me/alenakdn</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">128</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">t.me/alenakdn</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">128</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">t.me/alenakdn</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">128</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">t.me/alenakdn</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">128</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">t.me/alenakdn</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">128</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">t.me/alenakdn</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">128</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">t.me/alenakdn</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">128</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">t.me/alenakdn</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">128</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">t.me/alenakdn</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">128</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">t.me/alenakdn</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">128</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">t.me/alenakdn</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">128</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">t.me/alenakdn</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">128</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">t.me/alenakdn</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">128</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">t.me/alenakdn</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">128</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">t.me/alenakdn</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">128</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">t.me/alenakdn</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">128</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">t.me/alenakdn</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">128</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">t.me/alenakdn</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">128</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">t.me/alenakdn</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">128</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">t.me/alenakdn</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">128</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">t.me/alenakdn</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">128</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">t.me/alenakdn</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">128</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">t.me/alenakdn</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">128</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">t.me/alenakdn</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">128</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">t.me/alenakdn</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">128</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">t.me/alenakdn</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">128</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">t.me/alenakdn</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">128</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">t.me/alenakdn</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">128</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">t.me/alenakdn</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">128</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">t.me/alenakdn</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">128</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">t.me/alenakdn</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">128</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">t.me/alenakdn</span></div>
+                  <div class="stat__table__call">21</div>
+                  <div class="stat__table__call">128</div>
+                </div>
+              </div>
+            </div>
+              <div class="thisScrollContainer">
+                  <div class="thisScroll">
+                      <div class="thisScrollThumb"></div>
+                  </div>
+              </div>
+            <a href="#" class="show__bore__stat">
+              Показать ещё
+            </a>
+          </div>
+
+          <div class="stat__diagramma">
+            <div class="stat__table__title">
+              Диаграммы распределения заявок на блогеров
+            </div>
+            <div class="stat__diagramma__content flex">
+              <div class="stat__diagramma__big stat__diagramma_1">
+                <div class="stat__diagramma__title">
+                  По часам
+                </div>
+                <div class="stat__diagramma__body">
+                  <div class="stat__diagramma__net__horisontal flex">
+                    <div class="horisontal"><span>0</span></div>
+                    <div class="horisontal"><span>10</span></div>
+                    <div class="horisontal"><span>20</span></div>
+                    <div class="horisontal"><span>30</span></div>
+                    <div class="horisontal"><span>40</span></div>
+                    <div class="horisontal"><span>50</span></div>
+                    <div class="horisontal"><span>60</span></div>
+                  </div>
+                  <div class="stat__diagramma__net__vertical flex">
+                    <div class="vertical"></div>
+                    <div class="vertical"></div>
+                    <div class="vertical"></div>
+                    <div class="vertical"></div>
+                    <div class="vertical"></div>
+                    <div class="vertical"></div>
+                    <div class="vertical"></div>
+                    <div class="vertical"></div>
+                    <div class="vertical"></div>
+                  </div>
+                  <div class="stat__diagramma__indexes flex">
+                    <div style="height: calc(8 / 60 * 100%)" class="stat__diagramma__index"><span>00</span></div>
+                    <div style="height: calc(9 / 60 * 100%)" class="stat__diagramma__index"><span>01</span></div>
+                    <div style="height: calc(12 / 60 * 100%)" class="stat__diagramma__index"><span>02</span></div>
+                    <div style="height: calc(14 / 60 * 100%)" class="stat__diagramma__index"><span>03</span></div>
+                    <div style="height: calc(20 / 60 * 100%)" class="stat__diagramma__index"><span>04</span></div>
+                    <div style="height: calc(25 / 60 * 100%)" class="stat__diagramma__index"><span>05</span></div>
+                    <div style="height: calc(21 / 60 * 100%)" class="stat__diagramma__index"><span>06</span></div>
+                    <div style="height: calc(38 / 60 * 100%)" class="stat__diagramma__index"><span>07</span></div>
+                    <div style="height: calc(48 / 60 * 100%)" class="stat__diagramma__index"><span>08</span></div>
+                    <div style="height: calc(49 / 60 * 100%)" class="stat__diagramma__index"><span>09</span></div>
+                    <div style="height: calc(52 / 60 * 100%)" class="stat__diagramma__index"><span>10</span></div>
+                    <div style="height: calc(53 / 60 * 100%)" class="stat__diagramma__index"><span>11</span></div>
+                    <div style="height: calc(56 / 60 * 100%)" class="stat__diagramma__index"><span>12</span></div>
+                    <div style="height: calc(54 / 60 * 100%)" class="stat__diagramma__index"><span>13</span></div>
+                    <div style="height: calc(54 / 60 * 100%)" class="stat__diagramma__index"><span>14</span></div>
+                    <div style="height: calc(56 / 60 * 100%)" class="stat__diagramma__index"><span>15</span></div>
+                    <div style="height: calc(53 / 60 * 100%)" class="stat__diagramma__index"><span>16</span></div>
+                    <div style="height: calc(54 / 60 * 100%)" class="stat__diagramma__index"><span>17</span></div>
+                    <div style="height: calc(53 / 60 * 100%)" class="stat__diagramma__index"><span>18</span></div>
+                    <div style="height: calc(43 / 60 * 100%)" class="stat__diagramma__index"><span>19</span></div>
+                    <div style="height: calc(37 / 60 * 100%)" class="stat__diagramma__index"><span>20</span></div>
+                    <div style="height: calc(17 / 60 * 100%)" class="stat__diagramma__index"><span>21</span></div>
+                    <div style="height: calc(12 / 60 * 100%)" class="stat__diagramma__index"><span>22</span></div>
+                    <div style="height: calc(8 / 60 * 100%)" class="stat__diagramma__index"><span>23</span></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="stat__diagramma__small stat__diagramma_2">
+                <div class="stat__diagramma__title">
+                  По дням недели
+                </div>
+                <div class="stat__diagramma__body">
+                  <div class="stat__diagramma__net__horisontal flex">
+                    <div class="horisontal"><span>0</span></div>
+                    <div class="horisontal"><span>70</span></div>
+                    <div class="horisontal"><span>140</span></div>
+                    <div class="horisontal"><span>210</span></div>
+                    <div class="horisontal"><span>280</span></div>
+                    <div class="horisontal"><span>350</span></div>
+                    <div class="horisontal"><span>420</span></div>
+                  </div>
+                  <div class="stat__diagramma__net__vertical flex">
+                    <div class="vertical"></div>
+                    <div class="vertical"></div>
+                    <div class="vertical"></div>
+                    <div class="vertical"></div>
+                    <div class="vertical"></div>
+                  </div>
+                  <div class="stat__diagramma__indexes flex">
+                    <div style="height: calc(65 / 420 * 100%)" class="stat__diagramma__index"><span>Пн</span></div>
+                    <div style="height: calc(70 / 420 * 100%)" class="stat__diagramma__index"><span>Вт</span></div>
+                    <div style="height: calc(75 / 420 * 100%)" class="stat__diagramma__index"><span>Ср</span></div>
+                    <div style="height: calc(100 / 420 * 100%)" class="stat__diagramma__index"><span>Чт</span></div>
+                    <div style="height: calc(135 / 420 * 100%)" class="stat__diagramma__index"><span>Пт</span></div>
+                    <div style="height: calc(190 / 420 * 100%)" class="stat__diagramma__index"><span>Сб</span></div>
+                    <div style="height: calc(140 / 420 * 100%)" class="stat__diagramma__index"><span>Вс</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="stat__diagramma">
+            <div class="stat__table__title">
+              Диаграммы распределения промокодов на блогеров
+            </div>
+            <div class="stat__diagramma__content flex">
+              <div class="stat__diagramma__big stat__diagramma_3">
+                <div class="stat__diagramma__title">
+                  По часам
+                </div>
+                <div class="stat__diagramma__body">
+                  <div class="stat__diagramma__net__horisontal flex">
+                    <div class="horisontal"><span>0</span></div>
+                    <div class="horisontal"><span>10</span></div>
+                    <div class="horisontal"><span>20</span></div>
+                    <div class="horisontal"><span>30</span></div>
+                    <div class="horisontal"><span>40</span></div>
+                    <div class="horisontal"><span>50</span></div>
+                    <div class="horisontal"><span>60</span></div>
+                  </div>
+                  <div class="stat__diagramma__net__vertical flex">
+                    <div class="vertical"></div>
+                    <div class="vertical"></div>
+                    <div class="vertical"></div>
+                    <div class="vertical"></div>
+                    <div class="vertical"></div>
+                    <div class="vertical"></div>
+                    <div class="vertical"></div>
+                    <div class="vertical"></div>
+                    <div class="vertical"></div>
+                  </div>
+                  <div class="stat__diagramma__indexes flex">
+                    <div style="height: calc(8 / 60 * 100%)" class="stat__diagramma__index"><span>00</span></div>
+                    <div style="height: calc(9 / 60 * 100%)" class="stat__diagramma__index"><span>01</span></div>
+                    <div style="height: calc(12 / 60 * 100%)" class="stat__diagramma__index"><span>02</span></div>
+                    <div style="height: calc(14 / 60 * 100%)" class="stat__diagramma__index"><span>03</span></div>
+                    <div style="height: calc(20 / 60 * 100%)" class="stat__diagramma__index"><span>04</span></div>
+                    <div style="height: calc(25 / 60 * 100%)" class="stat__diagramma__index"><span>05</span></div>
+                    <div style="height: calc(21 / 60 * 100%)" class="stat__diagramma__index"><span>06</span></div>
+                    <div style="height: calc(38 / 60 * 100%)" class="stat__diagramma__index"><span>07</span></div>
+                    <div style="height: calc(48 / 60 * 100%)" class="stat__diagramma__index"><span>08</span></div>
+                    <div style="height: calc(49 / 60 * 100%)" class="stat__diagramma__index"><span>09</span></div>
+                    <div style="height: calc(52 / 60 * 100%)" class="stat__diagramma__index"><span>10</span></div>
+                    <div style="height: calc(53 / 60 * 100%)" class="stat__diagramma__index"><span>11</span></div>
+                    <div style="height: calc(56 / 60 * 100%)" class="stat__diagramma__index"><span>12</span></div>
+                    <div style="height: calc(54 / 60 * 100%)" class="stat__diagramma__index"><span>13</span></div>
+                    <div style="height: calc(54 / 60 * 100%)" class="stat__diagramma__index"><span>14</span></div>
+                    <div style="height: calc(56 / 60 * 100%)" class="stat__diagramma__index"><span>15</span></div>
+                    <div style="height: calc(53 / 60 * 100%)" class="stat__diagramma__index"><span>16</span></div>
+                    <div style="height: calc(54 / 60 * 100%)" class="stat__diagramma__index"><span>17</span></div>
+                    <div style="height: calc(53 / 60 * 100%)" class="stat__diagramma__index"><span>18</span></div>
+                    <div style="height: calc(43 / 60 * 100%)" class="stat__diagramma__index"><span>19</span></div>
+                    <div style="height: calc(37 / 60 * 100%)" class="stat__diagramma__index"><span>20</span></div>
+                    <div style="height: calc(17 / 60 * 100%)" class="stat__diagramma__index"><span>21</span></div>
+                    <div style="height: calc(12 / 60 * 100%)" class="stat__diagramma__index"><span>22</span></div>
+                    <div style="height: calc(8 / 60 * 100%)" class="stat__diagramma__index"><span>23</span></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="stat__diagramma__small stat__diagramma_4">
+                <div class="stat__diagramma__title">
+                  По дням недели
+                </div>
+                <div class="stat__diagramma__body">
+                  <div class="stat__diagramma__net__horisontal flex">
+                    <div class="horisontal"><span>0</span></div>
+                    <div class="horisontal"><span>70</span></div>
+                    <div class="horisontal"><span>140</span></div>
+                    <div class="horisontal"><span>210</span></div>
+                    <div class="horisontal"><span>280</span></div>
+                    <div class="horisontal"><span>350</span></div>
+                    <div class="horisontal"><span>420</span></div>
+                  </div>
+                  <div class="stat__diagramma__net__vertical flex">
+                    <div class="vertical"></div>
+                    <div class="vertical"></div>
+                    <div class="vertical"></div>
+                    <div class="vertical"></div>
+                    <div class="vertical"></div>
+                  </div>
+                  <div class="stat__diagramma__indexes flex">
+                    <div style="height: calc(65 / 420 * 100%)" class="stat__diagramma__index"><span>Пн</span></div>
+                    <div style="height: calc(70 / 420 * 100%)" class="stat__diagramma__index"><span>Вт</span></div>
+                    <div style="height: calc(75 / 420 * 100%)" class="stat__diagramma__index"><span>Ср</span></div>
+                    <div style="height: calc(100 / 420 * 100%)" class="stat__diagramma__index"><span>Чт</span></div>
+                    <div style="height: calc(135 / 420 * 100%)" class="stat__diagramma__index"><span>Пт</span></div>
+                    <div style="height: calc(190 / 420 * 100%)" class="stat__diagramma__index"><span>Сб</span></div>
+                    <div style="height: calc(140 / 420 * 100%)" class="stat__diagramma__index"><span>Вс</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="stat__grope__button flex">
+                <a href="#" class="grope__bidden__bottom">
+                    Скрыть раздел
+                </a>
+            </div>
+        </div>
+      </div>
+
+
+      <div id="stat3"  class="stat__grope">
+        <div class="stat__grope__header flex">
+          <h3 class="stat__grope__title">
+            По гивам
+          </h3>
+          <a href="#" class="hide__group flex">
+            <span class="hide__groupText">Скрыть раздел</span>
+            <span class="hide__group__button"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" fill="none"><path d="M5.02174 5L0 0L10 0L5.02174 5Z" fill="#6A7B83"/></svg></span>
+          </a>
+        </div>
+        <div class="stat__grope__content flex">
+          <div class="stat__table stat__table_7">
+            <div class="stat__table__title">
+              Статистика по гивам
+            </div>
+            <div class="stat__table__content">
+              <div class="stat__table__header flex">
+                <a href="#" class="stat__table__call">
+                  <span>Организатор <svg xmlns="http://www.w3.org/2000/svg" width="8" height="4" viewBox="0 0 8 4" fill="none"><path d="M4.01739 3.99994L0 -6.10352e-05L8 -6.10352e-05L4.01739 3.99994Z" fill="#6A7B83"/></svg></span>
+                </a>
+                <a href="#" class="stat__table__call">
+                  <span>Цена в боте <svg xmlns="http://www.w3.org/2000/svg" width="8" height="4" viewBox="0 0 8 4" fill="none"><path d="M4.01739 3.99994L0 -6.10352e-05L8 -6.10352e-05L4.01739 3.99994Z" fill="#6A7B83"/></svg></span>
+                </a>
+                <a href="#" class="stat__table__call">
+                  <span>Приход <svg xmlns="http://www.w3.org/2000/svg" width="8" height="4" viewBox="0 0 8 4" fill="none"><path d="M4.01739 3.99994L0 -6.10352e-05L8 -6.10352e-05L4.01739 3.99994Z" fill="#6A7B83"/></svg></span>
+                </a>
+                <a href="#" class="stat__table__call">
+                  <span>Промокоды <svg xmlns="http://www.w3.org/2000/svg" width="8" height="4" viewBox="0 0 8 4" fill="none"><path d="M4.01739 3.99994L0 -6.10352e-05L8 -6.10352e-05L4.01739 3.99994Z" fill="#6A7B83"/></svg></span>
+                </a>
+                <a href="#" class="stat__table__call">
+                  <span>Оплаты <svg xmlns="http://www.w3.org/2000/svg" width="8" height="4" viewBox="0 0 8 4" fill="none"><path d="M4.01739 3.99994L0 -6.10352e-05L8 -6.10352e-05L4.01739 3.99994Z" fill="#6A7B83"/></svg></span>
+                </a>
+                <a href="#" class="stat__table__call">
+                  <span>Реклама в чатах <svg xmlns="http://www.w3.org/2000/svg" width="8" height="4" viewBox="0 0 8 4" fill="none"><path d="M4.01739 3.99994L0 -6.10352e-05L8 -6.10352e-05L4.01739 3.99994Z" fill="#6A7B83"/></svg></span>
+                </a>
+                <a href="#" class="stat__table__call">
+                  <span>Рассылка по боту <svg xmlns="http://www.w3.org/2000/svg" width="8" height="4" viewBox="0 0 8 4" fill="none"><path d="M4.01739 3.99994L0 -6.10352e-05L8 -6.10352e-05L4.01739 3.99994Z" fill="#6A7B83"/></svg></span>
+                </a>
+                <a href="#" class="stat__table__call">
+                  <span>Старт гива <svg xmlns="http://www.w3.org/2000/svg" width="8" height="4" viewBox="0 0 8 4" fill="none"><path d="M4.01739 3.99994L0 -6.10352e-05L8 -6.10352e-05L4.01739 3.99994Z" fill="#6A7B83"/></svg></span>
+                </a>
+                <a href="#" class="stat__table__call">
+                  <span>Дней <br>в боте <svg xmlns="http://www.w3.org/2000/svg" width="8" height="4" viewBox="0 0 8 4" fill="none"><path d="M4.01739 3.99994L0 -6.10352e-05L8 -6.10352e-05L4.01739 3.99994Z" fill="#6A7B83"/></svg></span>
+                </a>
+              </div>
+              <div class="stat__table__rows">
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">nstagram.com/vikabuza.pr</span></div>
+                  <div class="stat__table__call">11 990 ₽</div>
+                  <div class="stat__table__call">8 000</div>
+                  <div class="stat__table__call">15</div>
+                  <div class="stat__table__call">3</div>
+                  <div class="stat__table__call">5</div>
+                  <div class="stat__table__call">2</div>
+                  <div class="stat__table__call">20.06.2019</div>
+                  <div class="stat__table__call">14</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">instagram.com/vikabuza.pr</span></div>
+                  <div class="stat__table__call">11 990 ₽</div>
+                  <div class="stat__table__call">8 000</div>
+                  <div class="stat__table__call">15</div>
+                  <div class="stat__table__call">3</div>
+                  <div class="stat__table__call">5</div>
+                  <div class="stat__table__call">2</div>
+                  <div class="stat__table__call">20.06.2019</div>
+                  <div class="stat__table__call">14</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">instagramfgfgcovikabuzartprinstagraikabuza.pr</span></div>
+                  <div class="stat__table__call">11 990 ₽</div>
+                  <div class="stat__table__call">8 000</div>
+                  <div class="stat__table__call">15</div>
+                  <div class="stat__table__call">3</div>
+                  <div class="stat__table__call">5</div>
+                  <div class="stat__table__call">2</div>
+                  <div class="stat__table__call">20.06.2019</div>
+                  <div class="stat__table__call">14</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">instagram.com/vikabuza.pr</span></div>
+                  <div class="stat__table__call">11 990 ₽</div>
+                  <div class="stat__table__call">8 000</div>
+                  <div class="stat__table__call">15</div>
+                  <div class="stat__table__call">3</div>
+                  <div class="stat__table__call">5</div>
+                  <div class="stat__table__call">2</div>
+                  <div class="stat__table__call">20.06.2019</div>
+                  <div class="stat__table__call">14</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">instagram.com/vikabuza.pr</span></div>
+                  <div class="stat__table__call">11 990 ₽</div>
+                  <div class="stat__table__call">8 000</div>
+                  <div class="stat__table__call">15</div>
+                  <div class="stat__table__call">3</div>
+                  <div class="stat__table__call">5</div>
+                  <div class="stat__table__call">2</div>
+                  <div class="stat__table__call">20.06.2019</div>
+                  <div class="stat__table__call">14</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">instagram.com/vikabuza.pr</span></div>
+                  <div class="stat__table__call">11 990 ₽</div>
+                  <div class="stat__table__call">8 000</div>
+                  <div class="stat__table__call">15</div>
+                  <div class="stat__table__call">3</div>
+                  <div class="stat__table__call">5</div>
+                  <div class="stat__table__call">2</div>
+                  <div class="stat__table__call">20.06.2019</div>
+                  <div class="stat__table__call">14</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">instagram.com/vikabuza.pr</span></div>
+                  <div class="stat__table__call">11 990 ₽</div>
+                  <div class="stat__table__call">8 000</div>
+                  <div class="stat__table__call">15</div>
+                  <div class="stat__table__call">3</div>
+                  <div class="stat__table__call">5</div>
+                  <div class="stat__table__call">2</div>
+                  <div class="stat__table__call">20.06.2019</div>
+                  <div class="stat__table__call">14</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">instagram.com/vikabuza.pr</span></div>
+                  <div class="stat__table__call">11 990 ₽</div>
+                  <div class="stat__table__call">8 000</div>
+                  <div class="stat__table__call">15</div>
+                  <div class="stat__table__call">3</div>
+                  <div class="stat__table__call">5</div>
+                  <div class="stat__table__call">2</div>
+                  <div class="stat__table__call">20.06.2019</div>
+                  <div class="stat__table__call">14</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">instagram.com/vikabuza.pr</span></div>
+                  <div class="stat__table__call">11 990 ₽</div>
+                  <div class="stat__table__call">8 000</div>
+                  <div class="stat__table__call">15</div>
+                  <div class="stat__table__call">3</div>
+                  <div class="stat__table__call">5</div>
+                  <div class="stat__table__call">2</div>
+                  <div class="stat__table__call">20.06.2019</div>
+                  <div class="stat__table__call">14</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">instagram.com/vikabuza.pr</span></div>
+                  <div class="stat__table__call">11 990 ₽</div>
+                  <div class="stat__table__call">8 000</div>
+                  <div class="stat__table__call">15</div>
+                  <div class="stat__table__call">3</div>
+                  <div class="stat__table__call">5</div>
+                  <div class="stat__table__call">2</div>
+                  <div class="stat__table__call">20.06.2019</div>
+                  <div class="stat__table__call">14</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">instagram.com/vikabuza.pr</span></div>
+                  <div class="stat__table__call">11 990 ₽</div>
+                  <div class="stat__table__call">8 000</div>
+                  <div class="stat__table__call">15</div>
+                  <div class="stat__table__call">3</div>
+                  <div class="stat__table__call">5</div>
+                  <div class="stat__table__call">2</div>
+                  <div class="stat__table__call">20.06.2019</div>
+                  <div class="stat__table__call">14</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">instagram.com/vikabuza.pr</span></div>
+                  <div class="stat__table__call">11 990 ₽</div>
+                  <div class="stat__table__call">8 000</div>
+                  <div class="stat__table__call">15</div>
+                  <div class="stat__table__call">3</div>
+                  <div class="stat__table__call">5</div>
+                  <div class="stat__table__call">2</div>
+                  <div class="stat__table__call">20.06.2019</div>
+                  <div class="stat__table__call">14</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">instagram.com/vikabuza.pr</span></div>
+                  <div class="stat__table__call">11 990 ₽</div>
+                  <div class="stat__table__call">8 000</div>
+                  <div class="stat__table__call">15</div>
+                  <div class="stat__table__call">3</div>
+                  <div class="stat__table__call">5</div>
+                  <div class="stat__table__call">2</div>
+                  <div class="stat__table__call">20.06.2019</div>
+                  <div class="stat__table__call">14</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">instagram.com/vikabuza.pr</span></div>
+                  <div class="stat__table__call">11 990 ₽</div>
+                  <div class="stat__table__call">8 000</div>
+                  <div class="stat__table__call">15</div>
+                  <div class="stat__table__call">3</div>
+                  <div class="stat__table__call">5</div>
+                  <div class="stat__table__call">2</div>
+                  <div class="stat__table__call">20.06.2019</div>
+                  <div class="stat__table__call">14</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">instagram.com/vikabuza.pr</span></div>
+                  <div class="stat__table__call">11 990 ₽</div>
+                  <div class="stat__table__call">8 000</div>
+                  <div class="stat__table__call">15</div>
+                  <div class="stat__table__call">3</div>
+                  <div class="stat__table__call">5</div>
+                  <div class="stat__table__call">2</div>
+                  <div class="stat__table__call">20.06.2019</div>
+                  <div class="stat__table__call">14</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">instagram.com/vikabuza.pr</span></div>
+                  <div class="stat__table__call">11 990 ₽</div>
+                  <div class="stat__table__call">8 000</div>
+                  <div class="stat__table__call">15</div>
+                  <div class="stat__table__call">3</div>
+                  <div class="stat__table__call">5</div>
+                  <div class="stat__table__call">2</div>
+                  <div class="stat__table__call">20.06.2019</div>
+                  <div class="stat__table__call">14</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">instagram.com/vikabuza.pr</span></div>
+                  <div class="stat__table__call">11 990 ₽</div>
+                  <div class="stat__table__call">8 000</div>
+                  <div class="stat__table__call">15</div>
+                  <div class="stat__table__call">3</div>
+                  <div class="stat__table__call">5</div>
+                  <div class="stat__table__call">2</div>
+                  <div class="stat__table__call">20.06.2019</div>
+                  <div class="stat__table__call">14</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">instagram.com/vikabuza.pr</span></div>
+                  <div class="stat__table__call">11 990 ₽</div>
+                  <div class="stat__table__call">8 000</div>
+                  <div class="stat__table__call">15</div>
+                  <div class="stat__table__call">3</div>
+                  <div class="stat__table__call">5</div>
+                  <div class="stat__table__call">2</div>
+                  <div class="stat__table__call">20.06.2019</div>
+                  <div class="stat__table__call">14</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">instagram.com/vikabuza.pr</span></div>
+                  <div class="stat__table__call">11 990 ₽</div>
+                  <div class="stat__table__call">8 000</div>
+                  <div class="stat__table__call">15</div>
+                  <div class="stat__table__call">3</div>
+                  <div class="stat__table__call">5</div>
+                  <div class="stat__table__call">2</div>
+                  <div class="stat__table__call">20.06.2019</div>
+                  <div class="stat__table__call">14</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">instagram.com/vikabuza.pr</span></div>
+                  <div class="stat__table__call">11 990 ₽</div>
+                  <div class="stat__table__call">8 000</div>
+                  <div class="stat__table__call">15</div>
+                  <div class="stat__table__call">3</div>
+                  <div class="stat__table__call">5</div>
+                  <div class="stat__table__call">2</div>
+                  <div class="stat__table__call">20.06.2019</div>
+                  <div class="stat__table__call">14</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">instagram.com/vikabuza.pr</span></div>
+                  <div class="stat__table__call">11 990 ₽</div>
+                  <div class="stat__table__call">8 000</div>
+                  <div class="stat__table__call">15</div>
+                  <div class="stat__table__call">3</div>
+                  <div class="stat__table__call">5</div>
+                  <div class="stat__table__call">2</div>
+                  <div class="stat__table__call">20.06.2019</div>
+                  <div class="stat__table__call">14</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">instagram.com/vikabuza.pr</span></div>
+                  <div class="stat__table__call">11 990 ₽</div>
+                  <div class="stat__table__call">8 000</div>
+                  <div class="stat__table__call">15</div>
+                  <div class="stat__table__call">3</div>
+                  <div class="stat__table__call">5</div>
+                  <div class="stat__table__call">2</div>
+                  <div class="stat__table__call">20.06.2019</div>
+                  <div class="stat__table__call">14</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">instagram.com/vikabuza.pr</span></div>
+                  <div class="stat__table__call">11 990 ₽</div>
+                  <div class="stat__table__call">8 000</div>
+                  <div class="stat__table__call">15</div>
+                  <div class="stat__table__call">3</div>
+                  <div class="stat__table__call">5</div>
+                  <div class="stat__table__call">2</div>
+                  <div class="stat__table__call">20.06.2019</div>
+                  <div class="stat__table__call">14</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">instagram.com/vikabuza.pr</span></div>
+                  <div class="stat__table__call">11 990 ₽</div>
+                  <div class="stat__table__call">8 000</div>
+                  <div class="stat__table__call">15</div>
+                  <div class="stat__table__call">3</div>
+                  <div class="stat__table__call">5</div>
+                  <div class="stat__table__call">2</div>
+                  <div class="stat__table__call">20.06.2019</div>
+                  <div class="stat__table__call">14</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">instagram.com/vikabuza.pr</span></div>
+                  <div class="stat__table__call">11 990 ₽</div>
+                  <div class="stat__table__call">8 000</div>
+                  <div class="stat__table__call">15</div>
+                  <div class="stat__table__call">3</div>
+                  <div class="stat__table__call">5</div>
+                  <div class="stat__table__call">2</div>
+                  <div class="stat__table__call">20.06.2019</div>
+                  <div class="stat__table__call">14</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">instagram.com/vikabuza.pr</span></div>
+                  <div class="stat__table__call">11 990 ₽</div>
+                  <div class="stat__table__call">8 000</div>
+                  <div class="stat__table__call">15</div>
+                  <div class="stat__table__call">3</div>
+                  <div class="stat__table__call">5</div>
+                  <div class="stat__table__call">2</div>
+                  <div class="stat__table__call">20.06.2019</div>
+                  <div class="stat__table__call">14</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">instagram.com/vikabuza.pr</span></div>
+                  <div class="stat__table__call">11 990 ₽</div>
+                  <div class="stat__table__call">8 000</div>
+                  <div class="stat__table__call">15</div>
+                  <div class="stat__table__call">3</div>
+                  <div class="stat__table__call">5</div>
+                  <div class="stat__table__call">2</div>
+                  <div class="stat__table__call">20.06.2019</div>
+                  <div class="stat__table__call">14</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">instagram.com/vikabuza.pr</span></div>
+                  <div class="stat__table__call">11 990 ₽</div>
+                  <div class="stat__table__call">8 000</div>
+                  <div class="stat__table__call">15</div>
+                  <div class="stat__table__call">3</div>
+                  <div class="stat__table__call">5</div>
+                  <div class="stat__table__call">2</div>
+                  <div class="stat__table__call">20.06.2019</div>
+                  <div class="stat__table__call">14</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">instagram.com/vikabuza.pr</span></div>
+                  <div class="stat__table__call">11 990 ₽</div>
+                  <div class="stat__table__call">8 000</div>
+                  <div class="stat__table__call">15</div>
+                  <div class="stat__table__call">3</div>
+                  <div class="stat__table__call">5</div>
+                  <div class="stat__table__call">2</div>
+                  <div class="stat__table__call">20.06.2019</div>
+                  <div class="stat__table__call">14</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">instagram.com/vikabuza.pr</span></div>
+                  <div class="stat__table__call">11 990 ₽</div>
+                  <div class="stat__table__call">8 000</div>
+                  <div class="stat__table__call">15</div>
+                  <div class="stat__table__call">3</div>
+                  <div class="stat__table__call">5</div>
+                  <div class="stat__table__call">2</div>
+                  <div class="stat__table__call">20.06.2019</div>
+                  <div class="stat__table__call">14</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">instagram.com/vikabuza.pr</span></div>
+                  <div class="stat__table__call">11 990 ₽</div>
+                  <div class="stat__table__call">8 000</div>
+                  <div class="stat__table__call">15</div>
+                  <div class="stat__table__call">3</div>
+                  <div class="stat__table__call">5</div>
+                  <div class="stat__table__call">2</div>
+                  <div class="stat__table__call">20.06.2019</div>
+                  <div class="stat__table__call">14</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">instagram.com/vikabuza.pr</span></div>
+                  <div class="stat__table__call">11 990 ₽</div>
+                  <div class="stat__table__call">8 000</div>
+                  <div class="stat__table__call">15</div>
+                  <div class="stat__table__call">3</div>
+                  <div class="stat__table__call">5</div>
+                  <div class="stat__table__call">2</div>
+                  <div class="stat__table__call">20.06.2019</div>
+                  <div class="stat__table__call">14</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">instagram.com/vikabuza.pr</span></div>
+                  <div class="stat__table__call">11 990 ₽</div>
+                  <div class="stat__table__call">8 000</div>
+                  <div class="stat__table__call">15</div>
+                  <div class="stat__table__call">3</div>
+                  <div class="stat__table__call">5</div>
+                  <div class="stat__table__call">2</div>
+                  <div class="stat__table__call">20.06.2019</div>
+                  <div class="stat__table__call">14</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">instagram.com/vikabuza.pr</span></div>
+                  <div class="stat__table__call">11 990 ₽</div>
+                  <div class="stat__table__call">8 000</div>
+                  <div class="stat__table__call">15</div>
+                  <div class="stat__table__call">3</div>
+                  <div class="stat__table__call">5</div>
+                  <div class="stat__table__call">2</div>
+                  <div class="stat__table__call">20.06.2019</div>
+                  <div class="stat__table__call">14</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">instagram.com/vikabuza.pr</span></div>
+                  <div class="stat__table__call">11 990 ₽</div>
+                  <div class="stat__table__call">8 000</div>
+                  <div class="stat__table__call">15</div>
+                  <div class="stat__table__call">3</div>
+                  <div class="stat__table__call">5</div>
+                  <div class="stat__table__call">2</div>
+                  <div class="stat__table__call">20.06.2019</div>
+                  <div class="stat__table__call">14</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">instagram.com/vikabuza.pr</span></div>
+                  <div class="stat__table__call">11 990 ₽</div>
+                  <div class="stat__table__call">8 000</div>
+                  <div class="stat__table__call">15</div>
+                  <div class="stat__table__call">3</div>
+                  <div class="stat__table__call">5</div>
+                  <div class="stat__table__call">2</div>
+                  <div class="stat__table__call">20.06.2019</div>
+                  <div class="stat__table__call">14</div>
+                </div>
+                <div class="stat__table__row">
+                  <div class="stat__table__call"><span class="long_tata">instagram.com/vikabuza.pr</span></div>
+                  <div class="stat__table__call">11 990 ₽</div>
+                  <div class="stat__table__call">8 000</div>
+                  <div class="stat__table__call">15</div>
+                  <div class="stat__table__call">3</div>
+                  <div class="stat__table__call">5</div>
+                  <div class="stat__table__call">2</div>
+                  <div class="stat__table__call">20.06.2019</div>
+                  <div class="stat__table__call">14</div>
+                </div>
+              </div>
+            </div>
+              <div class="thisScrollContainer">
+                  <div class="thisScroll">
+                      <div class="thisScrollThumb"></div>
+                  </div>
+              </div>
+            <a href="#" class="show__bore__stat">
+              Показать ещё
+            </a>
+          </div>
+            <div class="stat__grope__button flex">
+                <a href="#" class="grope__bidden__bottom">
+                    Скрыть раздел
+                </a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</div>
+
+
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__links flex">
+      <a href="#">Написать в техподдержку</a>
+      <a href="#">Пользовательское соглашение</a>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background-color: #424858;
+  }
+  .footer__links {
+    justify-content: center;
+  }
+  .footer__links a {
+    color: #fff;
+    font-size: 16px;
+    line-height: 50px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  @media screen and (max-width: 550px) {
+    .footer {
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
+    .footer__links a {
+      width: 100%;
+      line-height: 26px;
+      text-align: center;
+      font-size: 14px;
+    }
+  }
+</style>
+
+
+
+
+
+
+<script src="js/vendor.min.js"></script>
+<script src="js/custom.min.js"></script>
+</body>
+</html>
