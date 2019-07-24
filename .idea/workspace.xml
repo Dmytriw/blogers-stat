@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e13581c-f3ad-4fff-9204-4d85cc227bbb" name="Default" comment="Правка 6">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="3e13581c-f3ad-4fff-9204-4d85cc227bbb" name="Default" comment="Last commit" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -791,6 +789,34 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-348193330">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="html" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="HTML" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="txt" value="11" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PLAIN_TEXT" value="11" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="Project">
@@ -1549,13 +1575,18 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scss/sections/stat__section.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
               <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/pages/index2.html">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -1863,19 +1894,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Work\Sites\Building\BlogersStat\dist\js" />
-      <recent name="C:\Work\Sites\Building\VG\app\pages" />
-      <recent name="C:\Work\Sites\Building\Real Estate\app\pages" />
-      <recent name="C:\Work\Sites\Building\Science Invest\app\pages" />
-      <recent name="C:\Work\Sites\Building\Gabo\app\pages" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Work\Sites\Building\BlogersStat\dist\js" />
       <recent name="C:\Work\Sites\Building\BlogersInst\BlogersGit\app\libs\scroll-lock." />
       <recent name="C:\Work\Sites\Building\Real Estate\app\scss\sections" />
       <recent name="C:\Work\Sites\Building\Science Invest\app\scss\sections" />
       <recent name="C:\Work\Sites\Building\Home\app\pages\page" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Work\Sites\Ready\New projects\Blogers\BlogersStat\app\pages" />
+      <recent name="C:\Work\Sites\Building\BlogersStat\dist\js" />
+      <recent name="C:\Work\Sites\Building\VG\app\pages" />
+      <recent name="C:\Work\Sites\Building\Real Estate\app\pages" />
+      <recent name="C:\Work\Sites\Building\Science Invest\app\pages" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -2476,6 +2507,7 @@
       <workItem from="1562933700563" duration="1710000" />
       <workItem from="1562948444675" duration="867000" />
       <workItem from="1563255919587" duration="10000" />
+      <workItem from="1563980775119" duration="409000" />
     </task>
     <task id="LOCAL-00001" summary="Правка">
       <created>1561646159268</created>
@@ -2673,11 +2705,18 @@
       <option name="project" value="LOCAL" />
       <updated>1562948739662</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Last commit">
+      <created>1563980818851</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1563980818851</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5348221000" />
+    <option name="totallyTimeSpent" value="5348630000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2691,7 +2730,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4942717" visible="true" weight="0.23154363" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4942717" visible="true" weight="0.23489933" />
       <window_info id="Structure" order="1" weight="0.24966443" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -2728,10 +2767,10 @@
     <MESSAGE value="Правка 4" />
     <MESSAGE value="Правка 5" />
     <MESSAGE value="Правка 6" />
-    <option name="LAST_COMMIT_MESSAGE" value="Правка 6" />
+    <MESSAGE value="Last commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Last commit" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/scss/sections/about__second.scss" />
     <entry file="file://$PROJECT_DIR$/app/scss/sections/section__second.scss" />
     <entry file="file://$PROJECT_DIR$/app/scss/layout/fonts.scss">
       <provider selected="true" editor-type-id="text-editor" />
@@ -2808,23 +2847,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../Ready/New projects/ADC/app/js/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5718" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Ready/New projects/Bestdoctors/app/js/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2856" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Ready/New projects/Science Invest/app/js/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="46" column="4" lean-forward="true" selection-start-line="46" selection-start-column="4" selection-end-line="60" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Ready/New projects/ADC/app/js/common.js" />
+    <entry file="file://$PROJECT_DIR$/../../Ready/New projects/Bestdoctors/app/js/common.js" />
+    <entry file="file://$PROJECT_DIR$/../../Ready/New projects/Science Invest/app/js/common.js" />
     <entry file="file://$PROJECT_DIR$/dist/js/pureJSCalendar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -2887,6 +2912,9 @@
           <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/pages/index2.html">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
