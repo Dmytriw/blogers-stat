@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e13581c-f3ad-4fff-9204-4d85cc227bbb" name="Default" comment="Last commit" />
+    <list default="true" id="3e13581c-f3ad-4fff-9204-4d85cc227bbb" name="Default" comment="Last commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -792,27 +794,36 @@
     <session id="-348193330">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="css" value="1" />
           <entry key="html" value="1" />
+          <entry key="php" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="Blade" value="2" />
+          <entry key="CSS" value="1" />
           <entry key="HTML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="css" value="85" />
+          <entry key="php" value="33" />
           <entry key="txt" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="Blade" value="33" />
+          <entry key="CSS" value="85" />
           <entry key="PLAIN_TEXT" value="11" />
         </counts>
       </usages-collector>
@@ -1566,27 +1577,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/pages/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1547">
-              <caret line="91" column="19" selection-start-line="91" selection-start-column="12" selection-end-line="91" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scss/sections/stat__section.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/pages/index2.html">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$USER_HOME$/AppData/Local/Temp/scp02939/public_html/www/css/main.min.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="293">
+              <caret line="359" column="26" selection-start-line="359" selection-start-column="26" selection-end-line="359" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Temp/scp45442/public_html/resources/views/project/project.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-200">
+              <caret line="341" column="38" selection-start-line="341" selection-start-column="20" selection-end-line="341" selection-end-column="38" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -1600,17 +1606,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>form__part__inputs</find>
-      <find>stat__general__1</find>
-      <find>input__selsct</find>
-      <find>stat__table__header</find>
-      <find>#cal</find>
-      <find>short</find>
-      <find>stat__nav__item</find>
-      <find>Диаграммы распределения</find>
-      <find>тыс</find>
-      <find>.stat__tile__title</find>
-      <find>stat__nav</find>
       <find>stat__page</find>
       <find>wrapper</find>
       <find>wrapp</find>
@@ -1630,6 +1625,17 @@
       <find>show__bore__stat</find>
       <find>По бл</find>
       <find>thisScrollContainer</find>
+      <find>projects_list_name</find>
+      <find>revords_item</find>
+      <find>reword_overlay</find>
+      <find>any_sum_button</find>
+      <find>revords_item</find>
+      <find>saled</find>
+      <find>project_navigation</find>
+      <find>.project_navigation .support_button</find>
+      <find>support_button</find>
+      <find>for_support_button</find>
+      <find>hamburger</find>
     </findStrings>
     <replaceStrings>
       <replace>\n</replace>
@@ -1655,8 +1661,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/AppData/Local/Temp/scp02177/public_html/wp-content/themes/vg/front-page.php" />
-        <option value="$PROJECT_DIR$/../../Ready/New projects/Science Invest/app/js/common.js" />
         <option value="$PROJECT_DIR$/app/js/modules/scrolling.js" />
         <option value="$PROJECT_DIR$/app/scss/sections/section__question.scss" />
         <option value="$PROJECT_DIR$/app/scss/sections/section__adventages.scss" />
@@ -1706,6 +1710,8 @@
         <option value="$PROJECT_DIR$/app/pages/index.html" />
         <option value="$PROJECT_DIR$/app/js/common.js" />
         <option value="$PROJECT_DIR$/app/scss/sections/stat__section.scss" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp45442/public_html/resources/views/project/project.blade.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp02939/public_html/www/css/main.min.css" />
       </list>
     </option>
   </component>
@@ -1888,7 +1894,7 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/node_modules/gulp" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../PohoduLend" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
@@ -2507,7 +2513,7 @@
       <workItem from="1562933700563" duration="1710000" />
       <workItem from="1562948444675" duration="867000" />
       <workItem from="1563255919587" duration="10000" />
-      <workItem from="1563980775119" duration="641000" />
+      <workItem from="1563980775119" duration="5210000" />
     </task>
     <task id="LOCAL-00001" summary="Правка">
       <created>1561646159268</created>
@@ -2716,7 +2722,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5348862000" />
+    <option name="totallyTimeSpent" value="5353431000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2771,11 +2777,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Last commit" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/scss/sections/section__second.scss" />
-    <entry file="file://$PROJECT_DIR$/app/scss/layout/fonts.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Ready/New projects/Science Invest/app/scss/sections/clients__section.scss" />
     <entry file="file://$PROJECT_DIR$/../../Ready/New projects/ADC/app/scss/sections/private.scss" />
     <entry file="file://$PROJECT_DIR$/../../Ready/New projects/Science Invest/gulpfile.js" />
     <entry file="file://$PROJECT_DIR$/app/libs/maskedinput/jquery.mask.min.js">
@@ -2901,7 +2902,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/pages/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1547">
+        <state relative-caret-position="623">
           <caret line="91" column="19" selection-start-line="91" selection-start-column="12" selection-end-line="91" selection-end-column="19" />
         </state>
       </provider>
@@ -2914,7 +2915,32 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/pages/index2.html">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp43868/public_html/resources/views/projects/projects.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="20" column="53" lean-forward="true" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp45442/public_html/resources/views/project/project.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-200">
+          <caret line="341" column="38" selection-start-line="341" selection-start-column="20" selection-end-line="341" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp02939/public_html/www/css/main.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="359" column="26" selection-start-line="359" selection-start-column="26" selection-end-line="359" selection-end-column="26" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
