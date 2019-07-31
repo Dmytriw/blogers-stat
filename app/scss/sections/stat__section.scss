@@ -624,6 +624,13 @@
 
   .stat__table__rows {
     height: 216px;
+
+    .stat__table__call {
+      &:nth-child(2) {
+        margin-right: 20px;
+        text-align: right;
+      }
+    }
   }
 
   .stat__table__call {
@@ -1076,6 +1083,11 @@
 
   .stat__table__content::-webkit-scrollbar{
     height:4px;
+  }
+
+  .stat__table_3 .stat__table__rows .stat__table__call:nth-child(2) {
+    margin-right: 30px;
+    text-align: right;
   }
 }
 
